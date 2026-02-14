@@ -17,6 +17,9 @@
           "builder": "@angular/build:application",
           "options": {
             "browser": "src/main.ts",
+            "sourceMap": true,
+            "baseHref": "/new-site/",
+            "outputPath": "dist/psihologie-ralu",
             "tsConfig": "tsconfig.app.json",
             "assets": [
               {
@@ -25,7 +28,8 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "public/css/ie7.css"
             ]
           },
           "configurations": {
