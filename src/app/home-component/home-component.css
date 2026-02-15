@@ -1,0 +1,154 @@
+
+  
+
+
+/* ================= BODY ================= */
+
+.body {
+  flex: 1;
+  padding: 2rem;
+}
+
+/* Featured Section */
+#featured {
+  max-width: 1200px;
+  margin: 0 auto 3rem;
+  text-align: center;
+}
+
+#featured h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#featured p {
+  max-width: 700px;
+}
+
+#featured a {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #000;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+/* Blog Grid */
+.blog {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.blog h3 {
+  margin: 1rem 0 0.5rem;
+}
+
+.blog p {
+  font-size: 0.95rem;
+}
+
+.blog-img {
+    height:100px;
+}
+
+.blog-read-more {
+    
+    color:#33627e;
+	font-family: 'RokkittRegular';
+	text-decoration:none;
+	display:block;
+	margin:15px auto;
+	width: 218px;
+	height:74px;
+	outline:none;
+	font-size:22px;
+	font-weight:bold;
+	line-height:70px;
+	text-shadow: 0 1px 0 #d9edf8;
+}
+
+.blog-item {
+    text-align: center;
+}
+
+/* ================= FOOTER ================= */
+
+.footer {
+  background: #222;
+  color: white;
+  padding: 2rem;
+}
+
+.footer > div {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.connect {
+  margin: 1.5rem 0;
+}
+
+.footnote {
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+/* ================= RESPONSIVE BREAKPOINTS ================= */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .blog {
+    flex-direction: row;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  /* Stack header */
+  .header > div {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .header ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  /* Blog becomes single column */
+  .blog {
+     flex-direction: column;
+  }
+
+  #featured h3 {
+    font-size: 1.6rem;
+  }
+
+  .footer ul {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}
