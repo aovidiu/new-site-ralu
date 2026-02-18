@@ -1,0 +1,13 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background:url(/images/bg-body.jpg) no-repeat center top;
+  font-family: Arial, sans-serif;
+}
+
+.content {
+  flex: 1;
+  padding: 1rem;
+  background:url(/images/bg-content3.gif) repeat-x #90C5E7;
+}
