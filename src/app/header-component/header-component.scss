@@ -46,19 +46,99 @@ $header-height: 142px;
     height: $header-height;
     display: block;
     padding: 2px;
-  }
+}
 
-  @media (max-width: 768px) {
+.logo-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: $header-height;
+  font-family: 'Yellowtail', cursive;
+  font-size: 50px;
+  color: yellow;
+}
 
-  /* Stack header */
-  // .header-menu {
-  //   flex-direction: column;
-  //   gap: 1rem;
-  // }
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.burger span {
+  width: 25px;
+  height: 3px;
+  background: white;
+}
+
+.side-drawer { 
+  display: none; 
+}
+
+@media (max-width: 768px) {
 
   .header ul {
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
+  }
+
+  .side-drawer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 250px;
+    background: #222;    
+    padding: 2rem 1rem;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 1001;
+    background:url(/images/flowerwheel.jpg) repeat-x;
+  }
+
+  .side-drawer.open {
+    transform: translateX(0);
+  }
+
+  /* Overlay */
+  .overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+    z-index: 1000;
+  }
+
+  .overlay.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .side-drawer a {
+  color: white;
+  text-decoration: none;
+  }
+
+  .header-menu
+  {
+    display: none;    
+  }
+
+  .burger
+  {
+    display: flex;
+  }
+
+  .logo-title
+  {
+    font-size: 30px;    
   }
 }

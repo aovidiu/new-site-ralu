@@ -8,5 +8,21 @@ import { RouterModule } from '@angular/router';
   styleUrl: './header-component.scss',
 })
 export class HeaderComponent {
+  Acasa_menu= "Acasa";
+  DespreNoi_menu= "Despre noi";
+  Cursuri_menu = "Cursuri";
+  Contact_menu = "Contact";
+
+  isMenuOpen = false;
+
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+    document.body.style.overflow = this.isMenuOpen ? 'hidden' : '';
+  }
+
+  closeMenu() {
+    this.isMenuOpen = false;
+    document.body.style.overflow = '';
+  }
 
 }

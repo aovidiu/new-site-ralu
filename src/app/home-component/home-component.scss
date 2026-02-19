@@ -8,8 +8,8 @@ $text-weidth: 500px;
   gap: 0.5rem;
   justify-content: space-between;
   max-width: 1200px;
-  height: 400px;
-  margin: 0 auto 3rem;
+ 
+  margin: 1rem auto 1rem;
   align-items: stretch;
   background:url(/images/top-border.gif) repeat-x left bottom;
   overflow-y: auto;
@@ -20,6 +20,11 @@ $text-weidth: 500px;
   flex-direction: column;
   width: 100%;
 }
+
+.featured-img {
+   padding: 0 1rem 1rem 1rem;
+   max-width: 400px;
+  }
 
 .featured-title {
   color:#fff;
