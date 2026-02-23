@@ -12,6 +12,8 @@ export class HeaderComponent {
   DespreNoi_menu= "Despre noi";
   Cursuri_menu = "Cursuri";
   Contact_menu = "Contact";
+  Nume_Cabinet = "Cabinet individual de psihologie";
+  Nume = "Albu Raluca";
 
   isMenuOpen = false;
 
