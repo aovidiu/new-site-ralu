@@ -1,0 +1,30 @@
+button {
+  padding: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+
+.success-message {
+  color: green;
+  font-weight: bold;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+}
+
+
+button[type="submit"]:hover:not(:disabled) {
+  background-color: #0056b3;   /* darker blue on hover */
+}
+
+button[type="submit"]:disabled {
+  background-color: #007bff;   /* same base color */
+  opacity: 0.5;                /* lighter, semi-transparent */
+  cursor: not-allowed;          /* indicates disabled */
+}

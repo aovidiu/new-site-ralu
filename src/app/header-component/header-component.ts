@@ -27,4 +27,17 @@ export class HeaderComponent {
     document.body.style.overflow = '';
   }
 
+  closeMenuContact() {
+    this.isMenuOpen = false;
+    document.body.style.overflow = '';
+    this.scrollToFooter();
+  }
+
+  scrollToFooter(): void {
+  document.getElementById('footer')?.scrollIntoView({
+    behavior: 'smooth',
+    block: 'start'
+  });
+}
+
 }

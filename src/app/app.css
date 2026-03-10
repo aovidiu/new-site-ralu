@@ -17,3 +17,7 @@
 .content-footer {
   flex: 0 0 auto;   /* natural height */
 }
+
+html {
+  scroll-behavior: smooth;
+}

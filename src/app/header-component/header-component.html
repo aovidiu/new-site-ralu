@@ -13,7 +13,7 @@
             <a routerLink="/" routerLinkActive="selected" [routerLinkActiveOptions]="{ exact: true }">{{Acasa_menu}}</a>
             <a routerLink="/about" routerLinkActive="selected">{{DespreNoi_menu}}</a>
             <a routerLink="/blog" routerLinkActive="selected">{{Cursuri_menu}}</a>
-            <a routerLink="/contact" routerLinkActive="selected">{{Contact_menu}}</a>
+            <a routerLink="/contact" routerLinkActive="selected" (click)="scrollToFooter()" routerLinkActive="selected">{{Contact_menu}}</a>
         </nav>
         <div class="burger" (click)="toggleMenu()">
             <span></span>
@@ -34,7 +34,7 @@
   <a routerLink="/" (click)="closeMenu()">{{Acasa_menu}}</a>
   <a routerLink="/about" (click)="closeMenu()">{{DespreNoi_menu}}</a>
   <a routerLink="/blog" (click)="closeMenu()">{{Cursuri_menu}}</a>
-  <a routerLink="/contact" (click)="closeMenu()">{{Contact_menu}}</a>
+  <a routerLink="/contact" (click)="closeMenuContact()">{{Contact_menu}}</a>
 </nav>
 
 

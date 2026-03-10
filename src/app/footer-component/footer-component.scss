@@ -55,6 +55,9 @@ $footer-padding: 45px;
 	background-color: #005fa3;
 }
 
+.btn-img-text:hover img{
+	content: url("/images/send-message-hover.jpg");
+}
 
 /* Mobile */
 @media (max-width: 768px) {
