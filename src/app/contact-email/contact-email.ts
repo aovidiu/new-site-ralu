@@ -13,19 +13,23 @@ export class ContactEmail {
 
   @ViewChild('contactForm') contactForm!: NgForm;
 
-  ngAfterViewInit() {
-    // Listen for any change in form fields
-    this.contactForm.valueChanges?.subscribe(() => {
-      this.successMessage = '';
-      this.errorMessage = '';
-    });
-  }
-  
+  constructor(private http: HttpClient, private cdr: ChangeDetectorRef) {}
+
   successMessage: string = '';
   errorMessage: string = '';
   sending: boolean = false;
+  mesajTrimis: string = 'Mesaj trimis!';
 
-  constructor(private http: HttpClient, private cdr: ChangeDetectorRef) {}
+  ngAfterViewInit() {
+    this.contactForm.valueChanges?.subscribe(() => {
+      if(this.successMessage !== this.mesajTrimis) {
+        this.successMessage = '';
+      }
+      if(this.errorMessage) {
+        this.errorMessage = '';
+      }
+    });
+  }
 
   sendEmail(form: NgForm) {
     debugger;
@@ -37,25 +41,25 @@ export class ContactEmail {
 
     const url = 'https://formspree.io/f/xreagzzg';
     const headers = new HttpHeaders({ 'Accept': 'application/json' });
+    
 
     this.http.post(url, form.value, { headers }).subscribe({
       next: () => {
         debugger;
-        this.successMessage = 'Message sent successfully!';
+        this.successMessage = this.mesajTrimis;
         this.errorMessage = '';
         form.resetForm();
         this.sending = false;
         this.cdr.detectChanges(); 
       },
       error: (err) => {
-        debugger;
         var serverError: string = err.error.error;
         if(serverError.toLowerCase().includes("validation")) {
-          serverError = "Invalid email address";
+          serverError = "Adresa email invalida";
         } else {
           serverError = '';
         }
-        this.errorMessage = 'Oops! Something went wrong. ' +  serverError;
+        this.errorMessage = 'Eroare:  ' +  serverError;
         this.successMessage = '';
         this.sending = false;
         this.cdr.detectChanges(); 

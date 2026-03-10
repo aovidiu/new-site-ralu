@@ -1,22 +1,52 @@
-<div class="tm-contact-form">
+
+<div class="contact-page">
+  <div class="contact-spare"></div>
+  <div class="contact-card">
+    <form class="contact-form" #contactForm="ngForm" (ngSubmit)="sendEmail(contactForm)">
+      <div class="field">
+        <input class="input" type="text"name="name" ngModel placeholder="Nume" required autocomplete="name"/>
+      </div>
+
+      <div class="field">
+        <input class="input" type="email" name="email" ngModel placeholder="Email Dvs" required autocomplete="email"/>
+      </div>
+
+      <div class="field">
+        <textarea class="textarea" name="message" ngModel rows="5" placeholder="Message" required></textarea>
+      </div>
+
+      <p class="success-message" *ngIf="successMessage">{{ successMessage }}</p>
+      <p class="error-message" *ngIf="errorMessage">{{ errorMessage }}</p>
+
+      <div class="actions">
+        <button class="btn" type="submit" [disabled]="contactForm.invalid || sending">          
+          <span *ngIf="sending" class="spinner"></span>
+          <span>{{ sending ? 'Se trimite…' : 'Trimte' }}</span>
+        </button>
+      </div>
+    </form>
+  </div>
+  <div class="contact-spare"></div>
+</div>
+<!-- <div>
   <form #contactForm="ngForm" (ngSubmit)="sendEmail(contactForm)">
-    <div class="tm-form-group">
+    <div>
         <input type="text"  name="name" ngModel placeholder="Nume" required>
     </div>
 
-    <div class="tm-form-group">
+    <div>
         <input type="email" name="email" ngModel placeholder="Email Dvs" required>
     </div>
 
-    <div class="tm-form-group">
+    <div>
         <textarea name="message" ngModel rows="5" placeholder="Message" required></textarea>
     </div>
 
     <p class="success-message" *ngIf="successMessage">{{ successMessage }}</p>
     <p class="error-message" *ngIf="errorMessage">{{ errorMessage }}</p>
     
-    <div class="tm-text-right">
-      <button type="submit" class="tm-btn tm-btn-secondary tm-btn-pad-big" [disabled]="contactForm.invalid || sending">Send</button>
+    <div>
+      <button type="submit" [disabled]="contactForm.invalid || sending">Send</button>
     </div> 
   </form>
-</div>
+</div> -->
