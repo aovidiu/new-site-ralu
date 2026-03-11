@@ -4,15 +4,15 @@
   <div class="contact-card">
     <form class="contact-form" #contactForm="ngForm" (ngSubmit)="sendEmail(contactForm)">
       <div class="field">
-        <input class="input" type="text"name="name" ngModel placeholder="Nume" required autocomplete="name"/>
+        <input class="input" type="text"name="name" ngModel placeholder="Numele Dvs." required autocomplete="name"/>
       </div>
 
       <div class="field">
-        <input class="input" type="email" name="email" ngModel placeholder="Email Dvs" required autocomplete="email"/>
+        <input class="input" type="email" name="email" ngModel placeholder="Email-ul Dvs." required autocomplete="email"/>
       </div>
 
       <div class="field">
-        <textarea class="textarea" name="message" ngModel rows="5" placeholder="Message" required></textarea>
+        <textarea class="textarea" name="message" ngModel rows="5" placeholder="Mesajul Dvs." required></textarea>
       </div>
 
       <p class="success-message" *ngIf="successMessage">{{ successMessage }}</p>

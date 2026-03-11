@@ -12,11 +12,15 @@
   --primary2: #22c55e;
   --danger: #dc2626;
   --shadow: 0 10px 30px rgba(15, 23, 42, 0.15);
-  display: block;
+  display: flex;
+  justify-content: center;   /* orizontal */
+  align-items: center;       /* vertical */
+  height: 100%;
 }
 
 /* Page background */
 .contact-page {
+  width: 1000px;
   padding: 48px 48px 48px 48px;
   margin-left: 20px;
   margin-right: 20px;
