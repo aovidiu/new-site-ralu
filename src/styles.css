@@ -1,11 +1,11 @@
 /*------------------------- Font ------------------------*/ 
 @font-face {
     font-family: 'RokkittRegular';
-    src: url('/fonts/rokkitt-regular-webfont.eot');
-    src: url('/fonts/rokkitt-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/rokkitt-regular-webfont.woff') format('woff'),
-         url('/fonts/rokkitt-regular-webfont.ttf') format('truetype'),
-         url('/fonts/rokkitt-regular-webfont.svg#RokkittRegular') format('svg');
+    src: url('assets/fonts/rokkitt-regular-webfont.eot');
+    src: url('assets/fonts/rokkitt-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('assets/fonts/rokkitt-regular-webfont.woff') format('woff'),
+         url('assets/fonts/rokkitt-regular-webfont.ttf') format('truetype'),
+         url('assets/fonts/rokkitt-regular-webfont.svg#RokkittRegular') format('svg');
     font-weight: normal;
     font-style: normal;
 }

@@ -5,7 +5,7 @@ $footer-padding: 45px;
 	display:flex;
 	justify-content: center;
 	width:auto;
-	background:url(/images/bg-content3.jpg) repeat-x left top;
+	background:url(../../assets/images/bg-content3.jpg) repeat-x left top;
 	padding:$footer-padding 0 $footer-padding;
 	margin:0 auto;
 	overflow:hidden;
@@ -56,13 +56,13 @@ $footer-padding: 45px;
 }
 
 .btn-img-text:hover img{
-	content: url("/images/send-message-hover.jpg");
+	content: url("../../assets/images/send-message-hover.jpg");
 }
 
 /* Mobile */
 @media (max-width: 768px) {
 	.footer{		
-		padding:$footer-padding/2 0 $footer-padding/2;
+		padding:calc($footer-padding / 2) 0 calc($footer-padding / 2);
 	}
 
 	.contacts-wrapper {
