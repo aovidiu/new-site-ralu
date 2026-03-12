@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/styles.css"],
+  "sourcesContent": ["/*------------------------- Font ------------------------*/ \r\n@font-face {\r\n    font-family: 'RokkittRegular';\r\n    src: url('assets/fonts/rokkitt-regular-webfont.eot');\r\n    src: url('assets/fonts/rokkitt-regular-webfont.eot?#iefix') format('embedded-opentype'),\r\n         url('assets/fonts/rokkitt-regular-webfont.woff') format('woff'),\r\n         url('assets/fonts/rokkitt-regular-webfont.ttf') format('truetype'),\r\n         url('assets/fonts/rokkitt-regular-webfont.svg#RokkittRegular') format('svg');\r\n    font-weight: normal;\r\n    font-style: normal;\r\n}\r\n\r\n\r\n\r\n/* ===== Global Reset ===== */\r\n* {\r\n  margin: 0;\r\n  padding: 0;\r\n  box-sizing: border-box;\r\n}\r\n\r\n"],
+  "mappings": "AACA,WACI,YAAa,eACb,IAAK,oDACL,IAAK,2DAAuD,OAAO,oBAAoB,CAClF,qDAAiD,OAAO,OAAO,CAC/D,oDAAgD,OAAO,WAAW,CAClE,mEAA+D,OAAO,OAC3E,YAAa,IACb,WAAY,MAChB,CAKA,EAfA,OAgBU,EAhBV,QAiBW,EACT,WAAY,UACd",
+  "names": []
+}

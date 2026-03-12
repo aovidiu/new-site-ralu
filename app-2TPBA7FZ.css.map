@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/app.css"],
+  "sourcesContent": [".page {\r\n  display: flex;\r\n  flex-direction: column;\r\n  height: 100vh;\r\n  \r\n  background:url(../assets/images/bg-body.gif) no-repeat center top;\r\n  font-family: Arial, sans-serif;  \r\n}\r\n\r\n.content {\r\n  flex: 6;\r\n  padding: 0 1rem 1rem 1rem;\r\n  background:url(../assets/images/bg-content3.jpg) repeat-x #90C5E7;\r\n\r\n  display: flex;\r\n  flex-direction: column;\r\n}\r\n\r\n.content-header,\r\n.content-footer {\r\n  flex: 0 0 auto;   /* natural height */\r\n}\r\n\r\nhtml {\r\n  scroll-behavior: smooth;\r\n}"],
+  "mappings": "AAAA,CAAC,KACC,QAAS,KACT,eAAgB,OAChB,OAAQ,MAER,WAAW,oCAAkC,UAAU,OAAO,IAC9D,YAAa,KAAK,CAAE,UACtB,CAEA,CAAC,QACC,KAAM,EAVR,QAWW,EAAE,KAAK,KAChB,WAAW,wCAAsC,SAAS,QAE1D,QAAS,KACT,eAAgB,MAClB,CAEA,CAAC,eACD,CAAC,eACC,KAAM,EAAE,EAAE,IACZ,CAEA,KACE,gBAAiB,MACnB",
+  "names": []
+}
