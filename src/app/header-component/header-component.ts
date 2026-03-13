@@ -13,7 +13,9 @@ export class HeaderComponent {
   Cursuri_menu = "Cursuri";
   Contact_menu = "Contact";
   Nume_Cabinet = "Cabinet individual de psihologie";
-  Nume = "Albu Raluca";
+  Nume1 = "Albu Raluca";
+  Nume2 = "și"
+  Nume3 = "Ana Maria Badescu";
 
   isMenuOpen = false;
 

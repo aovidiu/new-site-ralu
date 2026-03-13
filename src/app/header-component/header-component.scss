@@ -1,7 +1,8 @@
 $header-height: 142px;
 $header-height-mobile: calc($header-height / 2);
-$size-font-title: 50px;
-$color-title: #edfa8e;
+$size-font-title: 40px;
+$size-font-nume: 50px;
+$color-title: rgb(237, 250, 142);
 
 .header-wrapper {
   width: 100%;
@@ -72,9 +73,16 @@ $color-title: #edfa8e;
   text-align: center;
 }
 
+.nume-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 .nume {
   font-family: 'Dancing Script', cursive;
-  font-size: $size-font-title + 10px;
+  font-size: $size-font-nume;
   color: $color-title;
 }
 
@@ -96,7 +104,7 @@ $color-title: #edfa8e;
   display: none; 
 }
 
-@media (max-width: 480px) {
+@media (max-width: 950px) {
 
   .logo-wrapper{
     height: $header-height-mobile;
@@ -165,16 +173,25 @@ $color-title: #edfa8e;
   }
 
   .nume-cabinet {    
-    font-size: calc($size-font-title / 3);
+    font-size: calc($size-font-title / 4);
+  }
+
+  .nume-wrapper{
+    flex-direction: column;
+    gap: 0;
   }
 
   .nume {
     font-family: 'Dancing Script', cursive;
-    font-size: calc($size-font-title / 2.8) + 10px;
+    font-size: calc($size-font-nume /8) + 10px;
     color: $color-title;
   }
   .header-wrapper {
     height: $header-height-mobile;
+  }
+
+  .header-menu {
+    gap: 0.5rem;
   }
   
   .logo {
