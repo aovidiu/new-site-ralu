@@ -2,7 +2,8 @@ $header-height: 142px;
 $header-height-mobile: calc($header-height / 2);
 $size-font-title: 40px;
 $size-font-nume: 50px;
-$color-title: rgb(237, 250, 142);
+$color-title: rgb(248, 103, 7);
+$logo-width: 200px;
 
 .header-wrapper {
   width: 100%;
@@ -16,7 +17,7 @@ $color-title: rgb(237, 250, 142);
 .header {
   width: 100%;
   display: flex;
-  align-items:flex-start;
+  align-items:center;
   justify-content: space-between;
   margin: 0 auto; 
 }
@@ -52,9 +53,7 @@ $color-title: rgb(237, 250, 142);
 }
 
 .logo {
-  max-width: 200px;
-  height: $header-height;
-  display: block;
+  max-width: $logo-width;
   padding: 2px;
 }
 
@@ -104,10 +103,35 @@ $color-title: rgb(237, 250, 142);
   display: none; 
 }
 
-@media (max-width: 950px) {
+/* Tablet */
+@media (max-width: 992px) {
+  .nume {
+    font-size: calc($size-font-nume /4);
+  }
+  .nume-cabinet {    
+    font-size: calc($size-font-title /2);
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .nume {
+    font-size: calc($size-font-nume /2.5);
+  }
+  
+  .nume-cabinet {    
+    font-size: calc($size-font-title / 3.5);
+  }
 
   .logo-wrapper{
     height: $header-height-mobile;
+  }
+
+  .logo {
+    height: $header-height-mobile;
+    max-width: $logo-width;
+    padding: 2px;
   }
 
   .header ul {
@@ -117,6 +141,7 @@ $color-title: rgb(237, 250, 142);
   }
 
   .header-wrapper {
+    height: $header-height-mobile;
     padding: 0;
   }
 
@@ -127,7 +152,7 @@ $color-title: rgb(237, 250, 142);
     position: fixed;
     top: 0;
     left: 0;
-    height: 100vh;
+    height: 200vh;
     width: 250px;
     background: #222;    
     padding: 2rem 1rem;
@@ -171,30 +196,13 @@ $color-title: rgb(237, 250, 142);
   {
     display: flex;
   }
-
-  .nume-cabinet {    
-    font-size: calc($size-font-title / 4);
-  }
-
+  
   .nume-wrapper{
     flex-direction: column;
     gap: 0;
   }
-
-  .nume {
-    font-family: 'Dancing Script', cursive;
-    font-size: calc($size-font-nume /8) + 10px;
-    color: $color-title;
-  }
-  .header-wrapper {
-    height: $header-height-mobile;
-  }
-
+ 
   .header-menu {
     gap: 0.5rem;
-  }
-  
-  .logo {
-    height: $header-height-mobile;
   }
 }
