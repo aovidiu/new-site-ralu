@@ -1,23 +1,32 @@
 <div class="footer">   
   <div class="contacts-wrapper">
-    <div class="contacts">    
+    <div class="contact-column">
       <div class="contact-item">
         <img class="icon" src="assets/images/call.png" alt="telefon"> 
-        <p>
-          0745087428
-        </p>
+        <p>{{ TelefonRaluca }}</p>
       </div>
       <div class="contact-item">
         <img class="icon" src="assets/images/email_1.png" alt="email">
-        <p>
-          raluca.albu@yahoo.com
-        </p>
+        <p>{{ EmailRaluca }}</p>
       </div>
     </div>
-    <div class="contact-item">      
+
+    <div class="contact-column contact-action">
       <button routerLink="/send-message" class="btn-img-text">
-          <img src="assets/images/send-message.jpg" alt="send-message">
-          <span>Trimite mesaj</span>
+        <img src="assets/images/send-message.jpg" alt="send-message">
+        <span>{{ Trimit_mesaj }}</span>
       </button>
     </div>
+
+    <div class="contact-column">
+      <div class="contact-item">
+        <img class="icon" src="assets/images/call.png" alt="telefon"> 
+        <p>{{ TelefonAna }}</p>
+      </div>
+      <div class="contact-item">
+        <img class="icon" src="assets/images/email_1.png" alt="email">
+        <p>{{ EmailAna }}</p>
+      </div>
+    </div>
+  </div>
 </div>

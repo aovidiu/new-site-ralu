@@ -24,3 +24,34 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* Back Button - Centralized */
+.back-button-container {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 100;
+}
+
+.back-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3f82b3;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(63, 130, 179, 0.3);
+}
+
+.back-button:hover {
+  background-color: #2d5a80;
+  box-shadow: 0 4px 12px rgba(63, 130, 179, 0.5);
+  transform: translateX(-3px);
+}
+
+.back-button:active {
+  transform: translateX(-1px);
+}
