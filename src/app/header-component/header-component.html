@@ -19,7 +19,7 @@
         <nav class="header-menu">
             <a routerLink="/" routerLinkActive="selected" [routerLinkActiveOptions]="{ exact: true }">{{Acasa_menu}}</a>
             <a routerLink="/about" routerLinkActive="selected">{{DespreNoi_menu}}</a>
-            <a routerLink="/blog" routerLinkActive="selected">{{Cursuri_menu}}</a>
+            <a routerLink="/library" routerLinkActive="selected">{{Cursuri_menu}}</a>
             <a routerLink="/contact" routerLinkActive="selected" (click)="scrollToFooter()" routerLinkActive="selected">{{Contact_menu}}</a>
         </nav>
         <div class="burger" (click)="toggleMenu()">
@@ -37,10 +37,10 @@
 </div>
 
 <!-- Side Drawer -->
-<nav class="side-drawer" [class.open]="isMenuOpen">
+<nav class="side-drawer" [class.open]="isMenuOpen" (click)="closeMenu()">
   <a routerLink="/" (click)="closeMenu()">{{Acasa_menu}}</a>
   <a routerLink="/about" (click)="closeMenu()">{{DespreNoi_menu}}</a>
-  <a routerLink="/blog" (click)="closeMenu()">{{Cursuri_menu}}</a>
+  <a routerLink="/library" (click)="closeMenu()">{{Cursuri_menu}}</a>
   <a routerLink="/contact" (click)="closeMenuContact()">{{Contact_menu}}</a>
 </nav>
 

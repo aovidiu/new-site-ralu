@@ -152,14 +152,15 @@ $logo-width: 200px;
     position: fixed;
     top: 0;
     left: 0;
-    height: 200vh;
+    height: 100vh;
     width: 250px;
-    background: #222;    
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
     padding: 2rem 1rem;
     transform: translateX(-100%);
     transition: transform 0.3s ease;
     z-index: 1001;
-    background:url(../../assets/images/flowerwheel.jpg) repeat-x;
   }
 
   .side-drawer.open {

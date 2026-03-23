@@ -7,6 +7,7 @@ import { RouterModule } from '@angular/router';
   templateUrl: './header-component.html',
   styleUrl: './header-component.scss',
 })
+
 export class HeaderComponent {
   Acasa_menu= "Acasa";
   DespreNoi_menu= "Despre noi";
@@ -14,7 +15,7 @@ export class HeaderComponent {
   Contact_menu = "Contact";
   Nume_Cabinet = "Cabinet individual de psihologie";
   Nume1 = "Albu Raluca și ";
-  Nume2 = "Ana Maria Badescu";
+  Nume2 = "Ana Maria Bădescu";
 
   isMenuOpen = false;
 
@@ -29,8 +30,7 @@ export class HeaderComponent {
   }
 
   closeMenuContact() {
-    this.isMenuOpen = false;
-    document.body.style.overflow = '';
+    this.closeMenu()
     this.scrollToFooter();
   }
 
