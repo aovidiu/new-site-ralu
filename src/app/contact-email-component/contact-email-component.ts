@@ -4,12 +4,12 @@ import { ChangeDetectorRef, Component, ViewChild } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 
 @Component({
-  selector: 'app-contact-email',
+  selector: 'app-contact-email-component',
   imports: [ CommonModule, FormsModule],
-  templateUrl: './contact-email.html',
-  styleUrl: './contact-email.css',
+  templateUrl: './contact-email-component.html',
+  styleUrl: './contact-email-component.css',
 })
-export class ContactEmail {
+export class ContactEmailComponent {
 
   @ViewChild('contactForm') contactForm!: NgForm;
 
@@ -22,7 +22,7 @@ export class ContactEmail {
 
   ngAfterViewInit() {
     this.contactForm.valueChanges?.subscribe(() => {
-      if(this.successMessage !== this.mesajTrimis) {
+      if(this.successMessage) {
         this.successMessage = '';
       }
       if(this.errorMessage) {
@@ -32,7 +32,6 @@ export class ContactEmail {
   }
 
   sendEmail(form: NgForm) {
-    debugger;
     if (form.invalid) return;
 
     this.sending = true;
@@ -45,11 +44,11 @@ export class ContactEmail {
 
     this.http.post(url, form.value, { headers }).subscribe({
       next: () => {
-        debugger;
-        this.successMessage = this.mesajTrimis;
-        this.errorMessage = '';
         form.resetForm();
-        this.sending = false;
+
+        this.successMessage = this.mesajTrimis;
+        this.errorMessage = '';        
+        this.sending = false;       
         this.cdr.detectChanges(); 
       },
       error: (err) => {
