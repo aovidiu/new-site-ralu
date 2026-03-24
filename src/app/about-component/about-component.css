@@ -11,25 +11,25 @@
 }
 
 .about-card {
-  background: rgba(232, 245, 255, 0.9);
+  background: rgba(255, 253, 249, 0.92);
   border-radius: 18px;
-  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.18);
+  box-shadow: var(--theme-shadow);
   padding: 2.5rem;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  border: 1px solid rgba(255, 255, 255, 0.65);
+  border: 1px solid var(--theme-border);
 }
 
 .about-title {
   margin: 0;
   font-size: clamp(1.8rem, 2.5vw, 2.4rem);
-  color: #204a71;
+  color: var(--theme-title);
 }
 
 .about-description {
   margin-top: 1rem;
   line-height: 1.64;
-  color: #304f64;
+  color: var(--theme-text);
   font-size: clamp(1rem, 1.5vw, 1.15rem);
 }
 
@@ -43,19 +43,19 @@
 .feature-item {
   padding: 1rem;
   border-radius: 12px;
-  border: 1px solid rgba(32, 74, 113, 0.18);
-  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(183, 121, 76, 0.2);
+  background: rgba(243, 231, 216, 0.5);
 }
 
 .feature-item h2 {
   margin: 0;
   font-size: 1.1rem;
-  color: #1e4565;
+  color: var(--theme-title);
 }
 
 .feature-item p {
   margin: 0.6rem 0 0;
-  color: #2f5c7a;
+  color: var(--theme-text);
   font-size: 0.95rem;
 }
 

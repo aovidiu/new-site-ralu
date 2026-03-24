@@ -2,31 +2,31 @@
   max-width: 900px;
   margin: 2rem auto;
   padding: 2rem;
-  background-color: #f9f9f9;
+  background-color: var(--theme-surface);
   border-radius: 8px;
   line-height: 1.8;
-  color: #333;
+  color: var(--theme-text);
 }
 
 .article-container h1 {
-  color: #3f82b3;
+  color: var(--theme-title);
   font-size: 2.5rem;
   margin-bottom: 2rem;
   text-align: center;
   font-family: 'RokkittRegular', serif;
-  text-shadow: 0 2px 4px rgba(63, 130, 179, 0.2);
+  text-shadow: 0 2px 4px rgba(183, 121, 76, 0.2);
 }
 
 .article-content {
-  background-color: white;
+  background-color: #fffdf9;
   padding: 2rem;
-  border-left: 4px solid #3f82b3;
+  border-left: 4px solid var(--theme-accent);
   border-radius: 4px;
 }
 
 .article-content p {
   font-size: 1.125rem;
-  color: #31607e;
+  color: var(--theme-text);
   margin-bottom: 1.5rem;
   text-align: justify;
   white-space: pre-wrap;

@@ -1,17 +1,17 @@
 :host {
-  --bg: #e0f2fe;
-  --card: #ffffff;
-  --cardBorder: #dbeafe;
-  --text: #0f172a;
-  --muted: #475569;
-  --inputBg: #f8fafc;
-  --inputBorder: #cbd5f5;
-  --inputBorderHover: #94a3f8;
-  --focus: rgba(99, 102, 241, 0.35);
-  --primary: #2563eb;
-  --primary2: #22c55e;
-  --danger: #dc2626;
-  --shadow: 0 10px 30px rgba(15, 23, 42, 0.15);
+  --bg: #f8f4ef;
+  --card: #fffdf9;
+  --cardBorder: #e6d5c3;
+  --text: #5e4a3b;
+  --muted: #8a7461;
+  --inputBg: #fffaf4;
+  --inputBorder: #ddc8b3;
+  --inputBorderHover: #cfa47f;
+  --focus: rgba(183, 121, 76, 0.28);
+  --primary: #b7794c;
+  --primary2: #9b6138;
+  --danger: #b34747;
+  --shadow: 0 10px 30px rgba(77, 58, 45, 0.14);
   display: flex;
   justify-content: center;   /* orizontal */
   align-items: center;       /* vertical */
@@ -28,9 +28,9 @@
   flex-direction: column;
   place-items: center;
   background:
-    radial-gradient(1200px 500px at 20% 0%, rgba(147, 197, 253, 0.65), transparent 60%),
-    radial-gradient(900px 400px at 90% 20%, rgba(186, 230, 253, 0.55), transparent 55%),
-    linear-gradient(180deg, #e0f2fe 0%, #bae6fd 100%);
+    radial-gradient(1200px 500px at 20% 0%, rgba(243, 231, 216, 0.72), transparent 60%),
+    radial-gradient(900px 400px at 90% 20%, rgba(248, 233, 213, 0.52), transparent 55%),
+    linear-gradient(180deg, #f8f4ef 0%, #f3e7d8 100%);
   color: var(--text);
 }
 
@@ -99,7 +99,7 @@ textarea {
 
 input::placeholder,
 textarea::placeholder {
-  color: rgba(7, 86, 243, 0.45);
+  color: rgba(138, 116, 97, 0.7);
 }
 
 input:hover,
@@ -109,13 +109,13 @@ textarea:hover {
 
 input:focus,
 textarea:focus {
-  border-color: rgba(99, 102, 241, 0.8);
+  border-color: rgba(183, 121, 76, 0.8);
   box-shadow: 0 0 0 4px var(--focus);
 }
 
 /* Inline validation hint (optional) */
 .hint {
-  color: rgba(230, 234, 242, 0.6);
+  color: rgba(138, 116, 97, 0.75);
   font-size: 12px;
 }
 
@@ -129,15 +129,15 @@ textarea:focus {
 }
 
 .success-message {
-  color: #080808;
-  background: rgba(34, 197, 94, 0.16);
-  border: 1px solid rgba(34, 197, 94, 0.35);
+  color: #3f5d3a;
+  background: rgba(99, 146, 96, 0.14);
+  border: 1px solid rgba(99, 146, 96, 0.3);
 }
 
 .error-message {
-  color: #080808;
-  background: rgba(239, 68, 68, 0.16);
-  border: 1px solid rgba(239, 68, 68, 0.35);
+  color: #7f3f3f;
+  background: rgba(179, 71, 71, 0.12);
+  border: 1px solid rgba(179, 71, 71, 0.3);
 }
 
 /* Actions */
@@ -158,9 +158,9 @@ textarea:focus {
   min-width: 150px;
   font-weight: 600;
   color: white;
-  background: linear-gradient(135deg, var(--primary), #8b5cf6);
+  background: linear-gradient(135deg, var(--primary), var(--primary2));
   cursor: pointer;
-  box-shadow: 0 12px 28px rgba(99, 102, 241, 0.25);
+  box-shadow: 0 10px 24px rgba(155, 97, 56, 0.24);
   transition: transform 120ms ease, filter 120ms ease, opacity 120ms ease;
 }
 

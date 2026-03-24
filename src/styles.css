@@ -19,6 +19,21 @@
   box-sizing: border-box;
 }
 
+:root {
+  --theme-bg: #f8f4ef;
+  --theme-surface: #fffdf9;
+  --theme-surface-soft: #f3e7d8;
+  --theme-surface-deep: #eadcc9;
+  --theme-title: #4d3a2d;
+  --theme-header-green: #5e8b52;
+  --theme-text: #5e4a3b;
+  --theme-muted: #8a7461;
+  --theme-accent: #b7794c;
+  --theme-accent-hover: #9b6138;
+  --theme-border: #e6d5c3;
+  --theme-shadow: 0 10px 24px rgba(77, 58, 45, 0.12);
+}
+
 /* Back Button - Centralized */
 .back-button-container {
   position: absolute;
@@ -30,21 +45,21 @@
 .back-button {
   display: inline-block;
   padding: 6px 12px;
-  background-color: rgba(63, 130, 179, 0.18);
-  color: rgba(26, 63, 90, 0.9);
+  background-color: rgba(183, 121, 76, 0.14);
+  color: var(--theme-title);
   text-decoration: none;
   border-radius: 6px;
-  border: 1px solid rgba(63, 130, 179, 0.28);
+  border: 1px solid rgba(183, 121, 76, 0.32);
   font-weight: 500;
   font-size: 0.82rem;
   letter-spacing: 0.1px;
   transition: all 0.3s ease;
-  box-shadow: 0 1px 4px rgba(63, 130, 179, 0.12);
+  box-shadow: 0 1px 4px rgba(77, 58, 45, 0.1);
 }
 
 .back-button:hover {
-  background-color: rgba(63, 130, 179, 0.28);
-  box-shadow: 0 2px 8px rgba(63, 130, 179, 0.2);
+  background-color: rgba(183, 121, 76, 0.22);
+  box-shadow: 0 2px 8px rgba(77, 58, 45, 0.16);
   transform: translateX(-1px);
 }
 
