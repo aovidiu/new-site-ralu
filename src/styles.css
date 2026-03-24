@@ -19,3 +19,35 @@
   box-sizing: border-box;
 }
 
+/* Back Button - Centralized */
+.back-button-container {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 100;
+}
+
+.back-button {
+  display: inline-block;
+  padding: 6px 12px;
+  background-color: rgba(63, 130, 179, 0.18);
+  color: rgba(26, 63, 90, 0.9);
+  text-decoration: none;
+  border-radius: 6px;
+  border: 1px solid rgba(63, 130, 179, 0.28);
+  font-weight: 500;
+  font-size: 0.82rem;
+  letter-spacing: 0.1px;
+  transition: all 0.3s ease;
+  box-shadow: 0 1px 4px rgba(63, 130, 179, 0.12);
+}
+
+.back-button:hover {
+  background-color: rgba(63, 130, 179, 0.28);
+  box-shadow: 0 2px 8px rgba(63, 130, 179, 0.2);
+  transform: translateX(-1px);
+}
+
+.back-button:active {
+  transform: translateX(-1px);
+}

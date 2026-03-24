@@ -11,6 +11,7 @@
   flex: 6;
   padding: 0 1rem 1rem 1rem;
   background:url(../assets/images/bg-content3.jpg) repeat-x #90C5E7;
+  position: relative;
 
   display: flex;
   flex-direction: column;

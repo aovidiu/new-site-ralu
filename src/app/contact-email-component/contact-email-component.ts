@@ -2,10 +2,11 @@ import { CommonModule } from '@angular/common';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { ChangeDetectorRef, Component, ViewChild } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-contact-email-component',
-  imports: [ CommonModule, FormsModule],
+  imports: [ CommonModule, FormsModule, RouterModule],
   templateUrl: './contact-email-component.html',
   styleUrl: './contact-email-component.css',
 })
