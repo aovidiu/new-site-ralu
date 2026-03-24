@@ -66,3 +66,14 @@
 .back-button:active {
   transform: translateX(-1px);
 }
+
+@media (max-width: 768px) {
+  .back-button-container {
+    position: relative;
+    top: auto;
+    left: auto;
+    z-index: 1;
+    margin: 0.6rem 0 0.35rem;
+    padding-left: 0.5rem;
+  }
+}

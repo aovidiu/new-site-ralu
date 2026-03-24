@@ -198,6 +198,19 @@ textarea:focus {
 }
 
 /* Responsive tweaks */
+@media (max-width: 768px) {
+  :host {
+    display: block;
+    height: auto;
+  }
+
+  .contact-page {
+    width: 100%;
+    margin: 0;
+    padding: 1rem 0.75rem 1.25rem;
+  }
+}
+
 @media (max-width: 480px) {
   .actions {
     justify-content: stretch;

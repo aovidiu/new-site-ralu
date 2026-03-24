@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-library-component',
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './library-component.html',
   styleUrl: './library-component.css',
 })
