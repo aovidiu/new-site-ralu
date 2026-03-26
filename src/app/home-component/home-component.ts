@@ -14,7 +14,7 @@ export class HomeComponent {
 
   Citeste_Mai_Mult = "Citește mai mult";
 
-  Titlul_Pagina = "Acesta este cabinetul nostru individual de psihologie";
+  Titlul_Pagina = "Cine suntem noi?";
 
   Descriere_Raluca = "Sunt Raluca Albu, psiholog clinician și psihoterapeut, cu o experiență de peste 10 ani în domeniul sănătății mintale. Am absolvit Facultatea de Psihologie și Științele Educației și am continuat să mă specializez în diverse forme de terapie, inclusiv terapia cognitiv-comportamentală și terapia de cuplu. Sunt pasionată de a ajuta oamenii să-și depășească provocările și să-și găsească echilibrul interior.";
 

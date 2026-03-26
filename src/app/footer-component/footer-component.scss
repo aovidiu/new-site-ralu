@@ -52,6 +52,53 @@ $footer-padding: 45px;
 	line-height: 1.45;
 }
 
+.contact-link {
+	display: inline-flex;
+	align-items: center;
+	color: var(--theme-text);
+	font-weight: 400;
+	line-height: 1.45;
+	text-decoration: none;
+	transition: color 0.2s ease;
+}
+
+.facebook-link {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	line-height: 0;
+	text-decoration: none;
+}
+
+.facebook-icon {
+	width: 25px;
+	height: 25px;
+	min-width: 25px;
+	transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.facebook-link:hover .facebook-icon {
+	filter: brightness(0.95);
+	transform: translateY(-1px);
+}
+
+.facebook-link:focus-visible {
+	outline: 3px solid rgba(183, 121, 76, 0.35);
+	outline-offset: 2px;
+	border-radius: 4px;
+}
+
+.contact-link:hover {
+	color: var(--theme-accent-hover);
+	text-decoration: underline;
+}
+
+.contact-link:focus-visible {
+	outline: 3px solid rgba(183, 121, 76, 0.35);
+	outline-offset: 2px;
+	border-radius: 4px;
+}
+
 .icon {
 	max-width: 25px;
 }

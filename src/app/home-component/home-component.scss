@@ -74,7 +74,7 @@ $text-weidth: 500px;
   color: var(--theme-title);
 	font-size:2.7rem;
 	line-height:40px;
-  text-shadow: 0 2px 8px rgba(183, 121, 76, 0.18);
+  text-shadow: var(--theme-title-shadow);
 	font-family: 'RokkittRegular';
 	margin:75px 0 20px 29px;
 	
@@ -115,6 +115,7 @@ $text-weidth: 500px;
 .blog h3 {
   margin: 1rem 0 0.5rem;
   color: var(--theme-title);
+  text-shadow: var(--theme-title-shadow);
 }
 
 .blog p {
