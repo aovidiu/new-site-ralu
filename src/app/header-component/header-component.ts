@@ -9,8 +9,8 @@ import { RouterModule } from '@angular/router';
 })
 
 export class HeaderComponent {
-  Acasa_menu= "Acasa";
-  DespreNoi_menu= "Despre noi";
+  Acasa_menu= "Acasă";
+  DespreNoi_menu= "Psihoterapie";
   Cursuri_menu = "Cursuri";
   Contact_menu = "Contact";
   Nume_Cabinet = "Cabinet individual de psihologie";

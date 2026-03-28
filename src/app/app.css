@@ -1,7 +1,7 @@
 .page {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   
   background: var(--theme-bg);
   color: var(--theme-text);
@@ -21,6 +21,12 @@
 .content-header,
 .content-footer {
   flex: 0 0 auto;   /* natural height */
+}
+
+.content-header {
+  position: sticky;
+  top: 0;
+  z-index: 900;
 }
 
 html {

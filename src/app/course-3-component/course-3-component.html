@@ -1,0 +1,24 @@
+<div class="back-button-container">
+  <a routerLink="/library" class="back-button">↩ {{ backButtonLabel }}</a>
+</div>
+
+<section class="course-page">
+  <article class="course-article">
+    <h1>{{ title }}</h1>
+
+    <img
+      class="course-image float-right"
+      ngSrc="assets/images/cursuri.png"
+      width="220"
+      height="220"
+      [alt]="imageAlt"
+      priority
+    />
+
+    <div class="course-text">
+      @for (paragraph of paragraphs; track paragraph) {
+        <p>{{ paragraph }}</p>
+      }
+    </div>
+  </article>
+</section>
