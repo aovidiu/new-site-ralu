@@ -20,6 +20,7 @@ export class ContactEmailComponent {
   errorMessage: string = '';
   sending: boolean = false;
   mesajTrimis: string = 'Mesaj trimis!';
+  formTitle: string = 'Formular Contact';
 
   ngAfterViewInit() {
     this.contactForm.valueChanges?.subscribe(() => {
@@ -39,7 +40,8 @@ export class ContactEmailComponent {
     this.successMessage = '';
     this.errorMessage = '';
 
-    const url = 'https://formspree.io/f/xreagzzg';
+    const url = 'https://contact-worker.message-contact.workers.dev/contact';
+    //const url = 'http://127.0.0.1:8787/contact';
     const headers = new HttpHeaders({ 'Accept': 'application/json' });
     
 

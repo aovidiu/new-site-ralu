@@ -63,6 +63,15 @@
   line-height: 1.5;
 }
 
+.form-title {
+  text-align: center;
+  margin: 0 0 18px 0;
+  font-size: clamp(20px, 2vw, 28px);
+  color: var(--text);
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
 /* Form layout */
 .contact-form {
   display: grid;
@@ -94,7 +103,7 @@ textarea {
 
 textarea {
   resize: vertical;
-  min-height: 120px;
+  min-height: 200px;
 }
 
 input::placeholder,
