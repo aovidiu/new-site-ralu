@@ -8,21 +8,19 @@
         <div class="text-container">
           <div class="half">
             <img src="assets/images/raluca.jpg" alt="raluca" class="float-left">
-            <p>
-              {{Descriere_Raluca}}
-            </p>
-            <p>
-              {{Descriere_Raluca}}
-            </p>
+            @for (paragraf of RalucaParagrafe; track $index) {
+              <p>
+                {{paragraf}}
+              </p>
+            }
           </div>
           <div class="half">
             <img src="assets/images/ana.jpg" alt="ana" class="float-right">
-            <p>
-              {{Descriere_Ana}}
-            </p>
-            <p>
-              {{Descriere_Ana}}
-            </p>
+            @for (paragraf of AnaParagrafe; track $index) {
+              <p>
+                {{paragraf}}
+              </p>
+            }
           </div>
         </div>
       </div>
