@@ -11,14 +11,8 @@
       ngSrc="assets/images/cursuri.png"
       width="220"
       height="220"
-      [alt]="imageAlt"
       priority
     />
-
-    <div class="course-text">
-      @for (paragraph of paragraphs; track paragraph) {
-        <p>{{ paragraph }}</p>
-      }
-    </div>
+   <div class="course-text" [innerHTML]="contents"></div>
   </article>
 </section>

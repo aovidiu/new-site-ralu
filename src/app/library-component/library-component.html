@@ -9,13 +9,12 @@
 		<p class="library-introduction">
 			{{ introduction }}
 		</p>
-
-		<h2 class="library-subtitle">{{ coursesTitle }}</h2>
-
+		
 		<div class="course-list">
 			@for (course of courses; track course.route) {
 				<section class="course-item">
 					<h3>{{ course.title }}</h3>
+					<br>
 					<p>{{ course.summary }}</p>
 					<a class="course-link" [routerLink]="course.route">{{ readMoreLabel }}</a>
 				</section>

@@ -1,0 +1,91 @@
+@use '../../styles/shared-content' as shared;
+
+$page-padding: 1rem;
+$page-padding-mobile: 0.8rem;
+$page-min-height: calc(100vh - 142px);
+$card-gap: 0.5rem;
+$content-gap: 16px;
+$card-padding: 1rem 1rem 1.2rem;
+$card-padding-mobile: 1rem;
+$feature-list-indent: 1.5rem;
+$feature-background: linear-gradient(180deg, var(--theme-surface) 0%, rgba(243, 231, 216, 0.45) 100%);
+
+.psihotrerapy-page {
+  padding: $page-padding;
+  min-height: $page-min-height;
+}
+
+.psihotrerapy-container {
+  width: shared.$card-width;
+  margin: 0 auto;
+}
+
+.psihotrerapy-card {
+  @include shared.content-card($card-padding, $feature-background);
+  display: flex;
+  flex-direction: column;
+  gap: $card-gap;
+  justify-content: space-between;
+  margin: 1rem auto;
+  align-items: stretch;
+}
+
+.psihotrerapy-title {
+  @include shared.content-title;
+}
+
+.psihotrerapy-content {
+  display: flex;
+  flex-direction: column;
+  gap: $content-gap;
+  align-items: start;
+}
+
+.feature-item {
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  border-radius: 0;
+}
+
+:host ::ng-deep .feature-item {
+  h2 {
+    margin: 1rem 0 0.75rem;
+    @include shared.section-heading;
+  }
+
+  p,
+  li {
+    @include shared.body-text;
+  }
+
+  p {
+    margin: 0 0 1rem;
+  }
+
+  ul {
+    margin: 0.75rem 0 1rem;
+    padding-left: $feature-list-indent;
+  }
+
+  li {
+    margin-bottom: 0.45rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .psihotrerapy-page {
+    padding: $page-padding-mobile;
+    min-height: auto;
+  }
+
+  .psihotrerapy-card {
+    padding: $card-padding-mobile;
+  }
+
+  .psihotrerapy-title {
+    line-height: 1.25;
+    padding-bottom: 12px;
+  }
+}

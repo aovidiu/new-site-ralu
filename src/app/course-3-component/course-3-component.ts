@@ -7,7 +7,7 @@ import { RouterModule } from '@angular/router';
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [RouterModule, NgOptimizedImage],
   templateUrl: './course-3-component.html',
-  styleUrl: './course-3-component.css',
+  styleUrl: './course-3-component.scss',
 })
 export class Course3Component {
   readonly backButtonLabel = 'Back';
