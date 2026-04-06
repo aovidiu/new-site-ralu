@@ -14,6 +14,6 @@ export class Course2Component {
   readonly backButtonLabel = 'Back';
 
   courses = COURSES;
-   title = COURSES[1].title;
-   contents = COURSES[1].contents;
+  title = COURSES[1].title;
+  contents = COURSES[1].contents;
 }

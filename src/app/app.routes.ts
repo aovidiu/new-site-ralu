@@ -9,6 +9,7 @@ import { Articol3Component } from './articol-3-component/articol-3-component';
 import { Course1Component } from './course-1-component/course-1-component';
 import { Course2Component } from './course-2-component/course-2-component';
 import { Course3Component } from './course-3-component/course-3-component';
+import { Course4Component } from './course-4-component/course-4-component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -20,5 +21,6 @@ export const routes: Routes = [
   { path: 'library-item-3', component: Articol3Component },
   { path: 'course-1', component: Course1Component },
   { path: 'course-2', component: Course2Component },
-  { path: 'course-3', component: Course3Component }
+  { path: 'course-3', component: Course3Component },
+  { path: 'course-4', component: Course4Component }
 ];

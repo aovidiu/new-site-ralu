@@ -84,9 +84,33 @@ export const ARTICLES: InfoStructure[] = [
   },
   {
     route: '/article-2',
-    title: 'Cum să-ți îmbunătățești stima de sine',
-    summary: `Stima de sine joacă un rol crucial în bunăstarea noastră mentală. În acest articol, vom explora modalități practice de a-ți îmbunătăți stima de sine, inclusiv exerciții de auto-reflecție, afirmări pozitive și alte tehnici care te pot ajuta să te simți mai încrezător și mai valoros.`,
-    contents: `<p>Stima de sine este fundamentul sănătății noastre mentale și emoționale. Este modul în care ne percepem pe noi înșine, cât de mult ne apreciem și cât de valoroși ne simțim. O stimă de sine sănătoasă ne permite să facem față provocărilor vieții, să construim relații pozitive și să urmăm visurile noastre cu încred`
+    title: 'Ce este și cum poți afla dacă psihoterapia-cognitiv comportamentală este potrivită pentru tine?',
+    summary: `Terapia cognitiv-comportamentală este o intervenție psihologică validată științific, de scurtă durată, care ajută persoana să-și dezvolte abilități de autoreglare și să facă schimbări practice în viața de zi cu zi.`,
+    contents: `<p>Terapia Cognitiv-Comportamentală (în engleză Cognitive Behavioral Therapy - CBT) este o formă de intervenție psihologică validată științific, axată pe rezolvarea de probleme, de durată relativ scurtă, încurajând persoana să dezvolte abilități de autoreglare și să facă schimbările dorite în viața de zi cu zi.</p>\
+    <p>Este un proces colaborativ, terapeutul ghidează persoana în a înțelege cu acuratețe maniera în care a dezvoltat anumite probleme și pune accentul pe învățarea unor deprinderi durabile, care o ajută să se poziționeze mai obiectiv și flexibil în raport cu dificultățile resimțite.</p>\
+    <p>Terapia cognitiv-comportamentală are la bază premisa că gândurile (cognițiile sau modul în care interpretezi o situație), emoțiile și comportamentele sunt interconectate. Imaginează-ți că sunt ca un „lanț”. Dacă schimbi o verigă, se schimbă tot lanțul.</p>\
+    <p>Dincolo de cuvinte complicate, un exemplu poate fi de ajutor:</p>\
+    <ol>\
+      <li><strong>Situația sau evenimentul activator (A)</strong>: ți se întâmplă ceva.</li>\
+      <li><strong>Gândurile (beliefs - B)</strong>: reprezintă tot ceea ce îți spui în minte în legătură cu acel eveniment, uneori automat, fără să îți dai seama. Exemple: „nu mă place nimeni”, „sunt incapabil”, „întotdeauna X face așa”.</li>\
+      <li><strong>Consecințele (C)</strong>: reacțiile tale emoționale și comportamentele care urmează, de exemplu rușine, tristețe, furie, evitare, renunțare sau ridicarea tonului vocii.</li>\
+    </ol>\
+    <p>Terapia te învață:</p>\
+    <ul>\
+      <li>să observi gândurile automate;</li>\
+      <li>să le pui sub semnul întrebării și să identifici interpretări alternative;</li>\
+      <li>să pui în practică acțiuni diferite și să iei decizii mai adaptate contextului și nevoilor tale.</li>\
+    </ul>\
+    <h3>Așadar, ce anume îți dorești?</h3>\
+    <ul>\
+      <li><strong>Psihoterapie cu eficiență validată?</strong> Psihoterapia cognitiv-comportamentală este considerată „standardul de aur” pentru tratarea anxietății, depresiei, atacurilor de panică și a tulburărilor obsesiv-compulsive, fiind susținută de numeroase studii științifice.</li>\
+      <li><strong>O intervenție structurată, orientată spre obiective?</strong> Împreună cu terapeutul vei discuta care sunt prioritățile tale, iar acesta te va ajuta să setezi obiective realiste, raportate la contextul tău de viață.</li>\
+      <li><strong>Practică, nu doar discuții?</strong> Accentul este pus pe modul în care vei implementa în viața de zi cu zi cele discutate în terapie. Vei primi exerciții și fișe de lucru personalizate. Cercetările au demonstrat că persoanele care se implică în proces și în afara ședințelor propriu-zise își ating obiectivele mai repede, iar starea lor îmbunătățită se menține mai multă vreme. Exemple de astfel de exerciții sunt monitorizarea stărilor emoționale, a gândurilor și a comportamentelor, programarea activităților, contracararea gândurilor negative și optimizarea stilului de comunicare cu ceilalți.</li>\
+      <li><strong>Schimbare comportamentală?</strong> Vei învăța abilități utile pe termen lung. Așa cum un antrenor personal îți arată cum să realizezi exercițiile chiar și în absența sa, la fel, ceea ce înveți în terapia cognitiv-comportamentală vei putea aplica și în afara ședințelor, pe cont propriu.</li>\
+    </ul>\
+    <p>Dacă ai răspuns afirmativ la întrebările de mai sus, te invităm să ne contactezi și vom discuta mai detaliat despre cum te poate ajuta psihoterapia cognitiv-comportamentală.</p>\
+    <h3>Bibliografie</h3>\
+    <p><em>Planuri de tratament și intervenții pentru depresie și anxietate</em>, ediția a doua (The Guilford Press, 2012), Robert L. Leahy, Stephen J. Holland și Lata McGinn.</p>`
   },
   {
     route: '/article-3',
