@@ -1,0 +1,64 @@
+@use './shared-content' as shared;
+@use './content-layout-tokens' as tokens;
+
+$card-padding: 1.25rem 1.25rem 1.5rem;
+
+@mixin article-layout {
+  .article-container {
+    width: shared.$card-width;
+    min-height: tokens.$page-min-height;
+    margin: 1rem auto;
+    @include shared.content-card($card-padding, tokens.$content-soft-background);
+  }
+
+  .article-container h1 {
+    @include shared.content-title;
+  }
+
+  .article-content {
+    width: 100%;
+    padding: 0;
+    border: 0;
+    background: transparent;
+  }
+
+  :host ::ng-deep .article-content {
+    p,
+    li {
+      @include shared.body-text;
+    }
+
+    p {
+      margin: 0 0 1rem;
+      white-space: pre-wrap;
+    }
+
+    h2,
+    h3 {
+      @include shared.section-heading;
+    }
+
+    ul,
+    ol {
+      margin: 0.75rem 0 1rem;
+      padding-left: tokens.$content-list-indent;
+    }
+
+    li {
+      margin-bottom: 0.45rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .article-container {
+      margin: 0.75rem auto;
+      padding: tokens.$mobile-card-padding;
+      min-height: auto;
+    }
+
+    .article-container h1 {
+      line-height: 1.25;
+      padding-bottom: 12px;
+    }
+  }
+}

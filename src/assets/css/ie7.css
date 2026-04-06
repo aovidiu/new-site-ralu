@@ -4,10 +4,10 @@
 /*------------------------- Header ------------------------*/
 
 /*------------------------- Body ------------------------*/
-.body div ul.blog li{
+.body div ul.article li{
 	width:258px;
 }
-.body div ul#blog li a{
+.body div ul#article li a{
 	margin: -47px 0 0 -50px;
 }
 

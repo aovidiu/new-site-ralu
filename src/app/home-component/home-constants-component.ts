@@ -81,6 +81,18 @@ export const ARTICLES: InfoStructure[] = [
     <p>Understanding High-Functioning Depression in Adults, Umit Tural, National Library of Medicine</p>\
     <p>High-functioning depression. Do you know the symptoms?, Clinical Director for Mental Health at Bupa UK</p>\
     <p><em>Depresia ascunsă</em>, dr. Judith Joseph, Ed. Bookzone, 2026</p>`
+  },
+  {
+    route: '/article-2',
+    title: 'Cum să-ți îmbunătățești stima de sine',
+    summary: `Stima de sine joacă un rol crucial în bunăstarea noastră mentală. În acest articol, vom explora modalități practice de a-ți îmbunătăți stima de sine, inclusiv exerciții de auto-reflecție, afirmări pozitive și alte tehnici care te pot ajuta să te simți mai încrezător și mai valoros.`,
+    contents: `<p>Stima de sine este fundamentul sănătății noastre mentale și emoționale. Este modul în care ne percepem pe noi înșine, cât de mult ne apreciem și cât de valoroși ne simțim. O stimă de sine sănătoasă ne permite să facem față provocărilor vieții, să construim relații pozitive și să urmăm visurile noastre cu încred`
+  },
+  {
+    route: '/article-3',
+    title: 'Importanța sănătății mintale în relațiile de cuplu',
+    summary: `teste`,
+    contents: `<p>Relațiile de cuplu sunt adesea considerate o sursă de sprijin și confort, dar ele pot fi, de asemenea, un teren fertil pentru stres și anxietate. Problemele de sănătate mintală, fie că sunt legate de anxietate, depresie sau alte tulburări, pot afecta profund dinamica unei relații. În acest articol, vom explora cum să recunoaștem semnele`
   }
 ];
 

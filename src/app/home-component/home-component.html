@@ -27,32 +27,16 @@
     </div>
     
 </div>
-<div class="blog">
-    <div class="blog-item">
-      <img class="blog-img" src="assets/images/cursuri.png" alt="comentariu">
-      <h3>{{Titlul_Article1}}</h3>
+<div class="article">
+  @for (article of Articles; track $index) {
+    <div class="article-item">
+      <img class="article-img" src="assets/images/cursuri.png" alt="articol">
+      <h3>{{article.title}}</h3>
       <p>
-        {{Summary_Article1}}
+        {{article.summary}}
       </p>
-      <a class="blog-read-more" routerLink="/article-1">{{Citeste_Mai_Mult}}</a>
+      <a class="article-read-more" [routerLink]="article.route">{{Citeste_Mai_Mult}}</a>
     </div>
-
-    <div class="blog-item">
-        <img class="blog-img" src="assets/images/cursuri.png" alt="comentariu">
-        <h3>{{Titlul_Article2}}</h3>
-        <p>
-            {{Summary_Article2}}
-        </p>
-        <a class="blog-read-more" routerLink="/article-2">{{Citeste_Mai_Mult}}</a>
-    </div>
-
-    <div class="blog-item">      
-      <img class="blog-img" src="assets/images/cursuri.png" alt="comentariu">      
-      <h3>{{Titlul_Article3}}</h3>
-      <p>
-        {{Summary_Article3}}
-      </p>
-      <a class="blog-read-more" routerLink="/library-item-3">{{Citeste_Mai_Mult}}</a>
-    </div>
+  }
 </div>
   

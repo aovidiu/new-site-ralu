@@ -1,18 +1,15 @@
 @use '../../styles/shared-content' as shared;
+@use '../../styles/content-layout-tokens' as tokens;
 
 $page-padding: 1rem;
 $page-padding-mobile: 0.8rem;
-$page-min-height: calc(100vh - 142px);
 $card-gap: 0.5rem;
 $content-gap: 16px;
 $card-padding: 1rem 1rem 1.2rem;
-$card-padding-mobile: 1rem;
-$feature-list-indent: 1.5rem;
-$feature-background: linear-gradient(180deg, var(--theme-surface) 0%, rgba(243, 231, 216, 0.45) 100%);
 
 .psihotrerapy-page {
   padding: $page-padding;
-  min-height: $page-min-height;
+  min-height: tokens.$page-min-height;
 }
 
 .psihotrerapy-container {
@@ -21,7 +18,7 @@ $feature-background: linear-gradient(180deg, var(--theme-surface) 0%, rgba(243, 
 }
 
 .psihotrerapy-card {
-  @include shared.content-card($card-padding, $feature-background);
+  @include shared.content-card($card-padding, tokens.$content-soft-background);
   display: flex;
   flex-direction: column;
   gap: $card-gap;
@@ -66,7 +63,7 @@ $feature-background: linear-gradient(180deg, var(--theme-surface) 0%, rgba(243, 
 
   ul {
     margin: 0.75rem 0 1rem;
-    padding-left: $feature-list-indent;
+    padding-left: tokens.$content-list-indent;
   }
 
   li {
@@ -81,7 +78,7 @@ $feature-background: linear-gradient(180deg, var(--theme-surface) 0%, rgba(243, 
   }
 
   .psihotrerapy-card {
-    padding: $card-padding-mobile;
+    padding: tokens.$mobile-card-padding;
   }
 
   .psihotrerapy-title {

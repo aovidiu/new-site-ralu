@@ -1,0 +1,13 @@
+cum rulez local cloudeFare send message
+1. deschide un terminal nou pe lang cel deja cu ng serve
+2. cd contact-worker
+3. npx wrangler dev (startez cloudefare local) care va asculta pe  http://127.0.0.1:8787
+4. in contact-email-componet.ts modific const url = 'http://127.0.0.1:8787/contact';
+
+
+cum fac update la adresa de serveremail FORMSPREE
+1. cd contact-worker
+2. npx wrangler secret put FORMSPREE_URL
+3. apoi la prompt fac paste cu noul URL
+4. npm run deploy (deploy la noul config pe serverul cloudfare)
+ATENTIE: in fisierul: .env.local este tinut FORMSPREE url in clar  FORMSPREE_URL=https://formspree.io/f/xreagzzg si se modifica si aici
