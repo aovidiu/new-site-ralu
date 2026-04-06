@@ -16,12 +16,15 @@
             </div>
         </div>
         </div>
-        <nav class="header-menu">
-            <a routerLink="/" routerLinkActive="selected" [routerLinkActiveOptions]="{ exact: true }">{{Acasa_menu}}</a>
-            <a routerLink="/psihotrerapy" routerLinkActive="selected">{{DespreNoi_menu}}</a>
-            <a routerLink="/library" routerLinkActive="selected">{{Cursuri_menu}}</a>
-            <a routerLink="/contact" routerLinkActive="selected" (click)="scrollToFooter()" routerLinkActive="selected">{{Contact_menu}}</a>
-        </nav>
+        <div class="header-menu-group">
+          <nav class="header-menu">
+              <a routerLink="/" routerLinkActive="selected" [routerLinkActiveOptions]="{ exact: true }">{{Acasa_menu}}</a>
+              <a routerLink="/psihotrerapy" routerLinkActive="selected">{{DespreNoi_menu}}</a>
+              <a routerLink="/library" routerLinkActive="selected">{{Cursuri_menu}}</a>
+              <a routerLink="/contact" routerLinkActive="selected" (click)="scrollToFooter()" routerLinkActive="selected">{{Contact_menu}}</a>
+          </nav>
+          <a class="shared-primary-button header-cta" routerLink="/send-message">Programează-te</a>
+        </div>
         <div class="burger" (click)="toggleMenu()">
             <span></span>
             <span></span>
@@ -42,6 +45,7 @@
   <a routerLink="/psihotrerapy" (click)="closeMenu()">{{DespreNoi_menu}}</a>
   <a routerLink="/library" (click)="closeMenu()">{{Cursuri_menu}}</a>
   <a routerLink="/contact" (click)="closeMenuContact()">{{Contact_menu}}</a>
+    <a routerLink="/send-message" class="shared-primary-button side-drawer-cta" (click)="closeMenu()">Programează-te</a>
 </nav>
 
 

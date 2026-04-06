@@ -156,40 +156,6 @@ textarea:focus {
   padding-top: 4px;
 }
 
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  border: none;
-  border-radius: 12px;
-  padding: 12px 16px;
-  min-width: 150px;
-  font-weight: 600;
-  color: white;
-  background: linear-gradient(135deg, var(--primary), var(--primary2));
-  cursor: pointer;
-  box-shadow: 0 10px 24px rgba(155, 97, 56, 0.24);
-  transition: transform 120ms ease, filter 120ms ease, opacity 120ms ease;
-}
-
-.btn:hover {
-  transform: translateY(-1px);
-  filter: brightness(1.05);
-}
-
-.btn:active {
-  transform: translateY(0);
-  filter: brightness(0.98);
-}
-
-.btn[disabled] {
-  opacity: 0.6;
-  cursor: not-allowed;
-  transform: none;
-  box-shadow: none;
-}
-
 /* Small spinner for sending state */
 .spinner {
   width: 16px;
@@ -224,7 +190,7 @@ textarea:focus {
   .actions {
     justify-content: stretch;
   }
-  .btn {
+  .shared-primary-button {
     width: 100%;
   }
 

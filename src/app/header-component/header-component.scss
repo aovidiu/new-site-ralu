@@ -32,6 +32,19 @@ $logo-width: 200px;
   margin: 0;
 }
 
+.header-menu-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.header-cta {
+  min-width: 210px;
+  font-size: 0.98rem;
+  padding: 9px 18px;
+}
+
 .header a {
   color: var(--theme-title);
   text-decoration: none;
@@ -46,6 +59,13 @@ $logo-width: 200px;
 .header a.selected {
   color: var(--theme-accent);
   border-bottom: 2px solid var(--theme-accent);
+}
+
+.header a.shared-primary-button,
+.header a.shared-primary-button:hover,
+.header a.shared-primary-button:active {
+  color: #fff;
+  border-bottom: none;
 }
 
 .header-separator {
@@ -198,9 +218,24 @@ $logo-width: 200px;
     font-weight: 500;
   }
 
+  .side-drawer .side-drawer-cta,
+  .side-drawer .side-drawer-cta:hover,
+  .side-drawer .side-drawer-cta:active {
+    color: #fff;
+    align-self: flex-start;
+    margin-top: 0.5rem;
+    min-width: 0;
+    padding: 8px 14px;
+    font-size: 0.9rem;
+  }
+
   .header-menu
   {
     display: none;    
+  }
+
+  .header-cta {
+    display: none;
   }
 
   .burger
