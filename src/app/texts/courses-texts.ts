@@ -1,13 +1,8 @@
-export type InfoStructure = {
-  title: string;
-  summary: string;
-  route: string;
-  contents: string;
-};
+import { InfoStructure } from "../common/types";
 
-export const COURSES: InfoStructure[] = [
+export const CoursesTexts: InfoStructure[] = [
   {
-    route: '/course-1',
+    route: '/course/1',
     title: "Dincolo de stres: cum să facem pași spre o viață mai echilibrată in relațiile de cuplu și în cele profesionale",
     summary: `Stresul este una dintre provocările constante ale vieții moderne, fiind tot mai prezent în ritmul alert \
       în care trăim.`,
@@ -32,7 +27,7 @@ export const COURSES: InfoStructure[] = [
       <p>Durata: 8 ore (cu pauză de 1 ora)</p>`
   },
   {
-    route: '/course-2',
+    route: '/course/2',
     title: "Cine sunt eu acum? Reconstruirea identității după o despărțire (divort, doliu, separare)",
     summary: `Despărțirile – fie că vorbim despre divorț, doliu sau separare – pot aduce cu ele nu doar \
     durere, ci și o profundă pierdere a reperelor personale. `,
@@ -56,7 +51,7 @@ export const COURSES: InfoStructure[] = [
     <p>Durata: 8 ore (cu pauză de 1 ora)</p>`
   },
   {
-    route: '/course-3',
+    route: '/course/3',
     title: "Cum depășești teama de a vorbi în public",
     summary: `Abilitatea de a vorbi în public este un predictor puternic pentru reușita profesională și dezvoltarea carierei.`,
     contents: `<p>Abilitatea de a vorbi în public este un predictor puternic pentru reușita profesională și dezvoltarea carierei.</p>\
@@ -78,7 +73,7 @@ export const COURSES: InfoStructure[] = [
     <p>Metode de formare: exerciții practice, jocuri de rol, realizare de prezentări și feedback individual din partea psihologului, discuții interactive.</p>`
   },
   {
-    route: '/course-4',
+    route: '/course/4',
     title: "Abilități esențiale pentru lucrul în echipă",
     summary: `Organizațiile pun un accent din ce în ce mai mare pe colaborare, iar performanța individuală este strâns legată de capacitatea de a lucra eficient cu ceilalți.`,
     contents: `<p>Organizațiile pun un accent din ce în ce mai mare pe colaborare, iar studiile arată că performanța individuală este strâns legată de capacitatea de a lucra eficient cu ceilalți.</p>\

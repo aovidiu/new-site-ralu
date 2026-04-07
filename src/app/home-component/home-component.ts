@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { ARTICLES, Descriptions } from './home-constants-component';
+import { DescriptionsTexts } from '../texts/descriptions-texts';
+import { ArticlesTexts } from '../texts/articles-texts';
+
 
 @Component({
   selector: 'app-home-component',
@@ -13,10 +15,10 @@ import { ARTICLES, Descriptions } from './home-constants-component';
 export class HomeComponent { 
   Titlul_Pagina = "Cine suntem noi?";
 
-  RalucaParagrafe = Object.values(Descriptions.Raluca);
-  AnaParagrafe = Object.values(Descriptions.Ana);
+  RalucaParagrafe = Object.values(DescriptionsTexts.Raluca);
+  AnaParagrafe = Object.values(DescriptionsTexts.Ana);
 
-  Articles = ARTICLES;
+  Articles = ArticlesTexts;
 
   Citeste_Mai_Mult = "Citește mai mult";
 }

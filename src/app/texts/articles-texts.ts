@@ -1,45 +1,8 @@
-import { InfoStructure } from "../library-component/library-constants-component";
+import { InfoStructure } from "../common/types";
 
-export const Descriptions = {
-  Raluca: 
+export const ArticlesTexts: InfoStructure[] = [
   {
-    Paragraf1: 
-    `Numele meu este Raluca Albu și sunt psiholog cu certificare în psihoterapie și psihologie organizațională. \
-    Am o experiență de peste 25 de ani în consiliere, dezvoltare personală,  psihoterapie, precum și în crearea și dezvoltarea \
-    programelor de training, workshopuri și intervenții personalizate pentru echipe și organizații. \
-    De-a lungul timpului, am avut privilegiul de a însoți oameni în momente importante din viața lor — uneori dificile, \
-    alteori pline de descoperiri — și de a le fi alături în procesul lor de transformare.`,
-    Paragraf2: 
-    `Formarea mea de bază este în terapie cognitiv-comportamentală, pe care am completat-o și cu alte abordări terapeutice, \
-    pe care le-am integrat în practica mea. Cred că fiecare persoană este unică, cu propriul ritm și propria poveste — de aceea, \
-    îmi adaptez modul de lucru astfel încât să răspund cât mai autentic și eficient fiecărei nevoi.`,
-    Paragraf3:
-    `Cred în puterea vulnerabilității asumate, în claritatea comunicării și în colaborarea reală din cadrul procesului terapeutic. \
-    Respectul, responsabilitatea, empatia și integritatea sunt valorile pe care le aduc în relațiile mele.`,
-    Paragraf4:
-    `Îmi doresc să ofer un spațiu sigur, cald și lipsit de judecată — un loc în care să te poți exprima liber, să te înțelegi mai bine \
-    și să găsești resursele de care ai nevoie pentru a merge mai departe.`
-  },
-  Ana: {
-    Paragraf1: 
-    `Sunt Ana-Maria Bădescu, psiholog cu drept de liberă practică în specialitățile psihologie organizațională și \
-    psihoterapie cognitiv-comportamentală. Am o experiență de peste 25 ani în selecția și evaluarea de personal, \
-    training, dezvoltarea și coordonarea de programe pentru dezvoltarea echipelor, leadership organizațional, \
-    dezvoltarea personală a angajaților, consiliere psihologică și psihoterapie.`,
-    Paragraf2:
-    `Am devenit psiholog pentru că m-a atras dintotdeauna complexitatea minții umane, mi-am dorit să mă cunosc \
-    și să devin o versiune mai bună a mea. Pe măsură ce am câștigat experiență profesională, am învățat, mai \
-    mult decât încrederea în cunoștințele dobândite, că avem capacitatea de a ne depăși limitele și de a evolua, \
-    chiar și în momente de blocaj sau suferință.`,
-    Paragraf3:
-    `Pentru mine, însoțirea unui alt om pe drumul dezvoltării personale și al vindecării emoționale este un \
-    privilegiu și o responsabilitate. Îmi doresc să construiesc relații bazate pe respect, acceptare, empatie și autenticitate.`
-  }
-};
-
-export const ARTICLES: InfoStructure[] = [
-  {
-    route: '/article-1',
+    route: '/article/1',
     title: 'Depresia funcțională: când „pari bine”, dar nu ești',
     summary: `Există oameni care merg zilnic la muncă, își respectă responsabilitățile, zâmbesc în conversații \
     și par că au totul sub control. `,
@@ -83,7 +46,7 @@ export const ARTICLES: InfoStructure[] = [
     <p><em>Depresia ascunsă</em>, dr. Judith Joseph, Ed. Bookzone, 2026</p>`
   },
   {
-    route: '/article-2',
+    route: '/article/2',
     title: 'Ce este și cum poți afla dacă psihoterapia-cognitiv comportamentală este potrivită pentru tine?',
     summary: `Terapia cognitiv-comportamentală este o intervenție psihologică validată științific, de scurtă durată, care ajută persoana să-și dezvolte abilități de autoreglare și să facă schimbări practice în viața de zi cu zi.`,
     contents: `<p>Terapia Cognitiv-Comportamentală (în engleză Cognitive Behavioral Therapy - CBT) este o formă de intervenție psihologică validată științific, axată pe rezolvarea de probleme, de durată relativ scurtă, încurajând persoana să dezvolte abilități de autoreglare și să facă schimbările dorite în viața de zi cu zi.</p>\
@@ -113,11 +76,50 @@ export const ARTICLES: InfoStructure[] = [
     <p><em>Planuri de tratament și intervenții pentru depresie și anxietate</em>, ediția a doua (The Guilford Press, 2012), Robert L. Leahy, Stephen J. Holland și Lata McGinn.</p>`
   },
   {
-    route: '/article-3',
-    title: 'Importanța sănătății mintale în relațiile de cuplu',
-    summary: `teste`,
-    contents: `<p>Relațiile de cuplu sunt adesea considerate o sursă de sprijin și confort, dar ele pot fi, de asemenea, un teren fertil pentru stres și anxietate. Problemele de sănătate mintală, fie că sunt legate de anxietate, depresie sau alte tulburări, pot afecta profund dinamica unei relații. În acest articol, vom explora cum să recunoaștem semnele`
+    route: '/article/3',
+    title: 'Dacă nu este doar timiditate? Când teama de a fi evaluat și blocajele emoționale în public devin semnale că este timpul să ceri ajutor?',
+    summary: `Se spune că peste 70% dintre oameni prezintă teama de a vorbi în public, iar ceilalți nu vor să recunoască.`,
+    contents: `<p>Se spune că peste 70% dintre oameni prezintă teama de a vorbi în public, iar ceilalți nu vor să recunoască.</p>\
+    <p>Prin urmare, este probabil că, la întrebarea „Ai emoții când trebuie să vorbești în public?”, vei răspunde „Da, normal!”.</p>\
+    <p>Dar...</p>\
+    <p>Teama este atât de mare încât începi să eviți situațiile sociale? Te gândești zile întregi înainte de o expunere, întâlnire, la ce ar putea merge prost? După o conversație îți repeți în minte tot ce ai spus și te critici?</p>\
+    <p>S-ar putea să fie mai mult decât timiditate sau emoții obișnuite.</p>\
+    <p>În psihologie, vorbim despre anxietate socială (sau fobie socială) atunci când persoana resimte o teamă/frică intensă și persistentă în una sau mai multe situații sociale în care este expusă posibilei evaluări de către alții. Printre situațiile care declanșează simptomele anxietății sociale se numără: vorbitul în public, întâlnirea unor persoane noi, mâncatul în public, discuțiile în contradictoriu, conversațiile cu persoane cu statut superior. În asemenea contexte, persoanele cu anxietate socială se tem că vor fi criticate ori judecate în termeni negativi, fie pentru că nu au avut rezultate adecvate, fie pentru că pur și simplu se vede că sunt anxioase.</p>\
+    <h3>Ce poți observa, la tine sau la cineva apropiat?</h3>\
+    <h3>Semnale emoționale și cognitive</h3>\
+    <ul>\
+      <li>teamă puternică înainte de prezentări, examene orale, intervenții la ședințe, întâlniri cu persoane noi;</li>\
+      <li>gânduri/afirmații frecvente precum: „O să spun ceva greșit.”, „Se vede că sunt emoționat/ă.”, „Toți mă judecă.”, „O să mă fac de râs.”;</li>\
+      <li>analizarea excesivă a interacțiunilor după ce s-au terminat („De ce am zis asta?”).</li>\
+    </ul>\
+    <h3>Semnale fizice</h3>\
+    <ul>\
+      <li>roșeață intensă;</li>\
+      <li>tremur al vocii sau al mâinilor;</li>\
+      <li>transpirație;</li>\
+      <li>palpitații;</li>\
+      <li>nod în gât;</li>\
+      <li>senzație de gol în stomac;</li>\
+      <li>evitarea contactului vizual.</li>\
+    </ul>\
+    <p>De cele mai multe ori, frica de a avea aceste simptome în public devine uneori mai puternică decât situația în sine.</p>\
+    <h3>Semnale comportamentale</h3>\
+    <ul>\
+      <li>evitarea situațiilor de expunere socială;</li>\
+      <li>lipsa implicării sau refuzul participării la evenimente sociale;</li>\
+      <li>amânarea interacțiunilor cu colegi, persoane noi.</li>\
+    </ul>\
+    <p>Dacă îți dai seama că aceste reacții îți afectează semnificativ performanța academică, activitățile profesionale sau relațiile cu ceilalți, atunci nu ignora. Conștientizarea este primul pas spre schimbare.</p>\
+    <p>Este important să știi că anxietatea socială este frecvent întâlnită și tratabilă. Nu înseamnă că „nu ești suficient de bun” sau că e ceva „greșit” la tine.</p>\
+    <h3>Care sunt rezultatele pe care le poți obține prin psihoterapie?</h3>\
+    <ol>\
+      <li>să recunoști gândurile/interpetările negative legate de participarea la diverse situații sociale și să le înlocuiești cu alternative mai realiste;</li>\
+      <li>să pui sub semnul întrebării, cu blândețe, compasiune și logică, convingerile care te limitează;</li>\
+      <li>să utilizezi strategii variate pentru a te confrunta cu disconfortul, în timp ce îți exersezi „mușchii toleranței la anxietate”;</li>\
+      <li>să avansezi în direcția confruntării cu situațiile de care îți este teamă și să îți atingi scopurile pe plan social.</li>\
+    </ol>\
+    <h3>Bibliografie</h3>\
+    <p><em>Curajul social</em>, Dr. Eric Goodman, editura Curtea Veche, 2021.</p>\
+    <p><em>Planuri de tratament și intervenții pentru depresie și anxietate</em>, Robert L. Leahy, Stephen J. Holland și Lata McGinn, The Guilford Press, 2012.</p>`
   }
 ];
-
- 

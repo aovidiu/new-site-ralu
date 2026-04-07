@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { COURSES } from './library-constants-component';
+import { CoursesTexts } from '../texts/courses-texts';
 
 @Component({
   selector: 'app-library-component',
@@ -19,5 +19,5 @@ export class LibraryComponent {
 
   readonly readMoreLabel = 'Citește mai mult';
 
-  readonly courses = COURSES;
+  readonly courses = CoursesTexts;
 }
