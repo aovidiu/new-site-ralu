@@ -146,10 +146,12 @@ $logo-width: 200px;
 
   .nume {
     font-size: calc($size-font-nume /2.5);
+    font-weight: bold;
   }
   
   .nume-cabinet {    
     font-size: calc($size-font-title / 3.5);
+    font-weight: bold;
   }
 
   .logo-wrapper{

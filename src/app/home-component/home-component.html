@@ -30,7 +30,7 @@
 <div id="articles" class="article">
   @for (article of Articles; track $index) {
     <div class="article-item">
-      <img class="article-img" src="assets/images/cursuri.png" alt="articol">
+      <img class="article-img" [src]="article.image || 'assets/images/cursuri.png'" [alt]="article.imageAlt || article.title">
       <h3>{{article.title}}</h3>
       <p>
         {{article.summary}}
