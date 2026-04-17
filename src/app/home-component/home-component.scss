@@ -127,7 +127,11 @@ $text-weidth: 500px;
 }
 
 .article-img {
-    height:100px;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
 }
 
 .article-read-more {

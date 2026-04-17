@@ -6,6 +6,8 @@ export const ArticlesTexts: InfoStructure[] = [
     title: 'Depresia funcțională: când „pari bine”, dar nu ești',
     summary: `Există oameni care merg zilnic la muncă, își respectă responsabilitățile, zâmbesc în conversații \
     și par că au totul sub control. `,
+    image: 'assets/images/article-depresie-functionala.svg',
+    imageAlt: 'depresia funcțională',
     contents: `<p>Există oameni care merg zilnic la muncă, își respectă responsabilitățile, zâmbesc în conversații și par că au totul sub control. Din exterior, nimic nu trădează o problemă. Și totuși, în interior, acești oameni se confruntă cu un gol persistent, cu oboseală emoțională și cu o lipsă de sens greu de explicat. Aceasta este realitatea depresiei funcționale – o formă subtilă și adesea invizibilă de suferință psihică.</p>\
     <p>Deși nu este un diagnostic oficial, termenul de „depresie funcțională” a devenit tot mai folosit pentru a descrie acele situații în care o persoană trăiește simptome depresive, dar continuă să funcționeze aparent normal. Își face treaba, își îndeplinește rolurile sociale și profesionale, dar fiecare zi este dusă cu un efort interior considerabil.</p>\
     <h3>O depresie care nu se vede</h3>\
@@ -49,6 +51,8 @@ export const ArticlesTexts: InfoStructure[] = [
     route: '/article/2',
     title: 'Ce este și cum poți afla dacă psihoterapia-cognitiv comportamentală este potrivită pentru tine?',
     summary: `Terapia cognitiv-comportamentală este o intervenție psihologică validată științific, de scurtă durată, care ajută persoana să-și dezvolte abilități de autoreglare și să facă schimbări practice în viața de zi cu zi.`,
+    image: 'assets/images/article-terapie-cbt.svg',
+    imageAlt: 'terapia cognitiv-comportamentală',
     contents: `<p>Terapia Cognitiv-Comportamentală (în engleză Cognitive Behavioral Therapy - CBT) este o formă de intervenție psihologică validată științific, axată pe rezolvarea de probleme, de durată relativ scurtă, încurajând persoana să dezvolte abilități de autoreglare și să facă schimbările dorite în viața de zi cu zi.</p>\
     <p>Este un proces colaborativ, terapeutul ghidează persoana în a înțelege cu acuratețe maniera în care a dezvoltat anumite probleme și pune accentul pe învățarea unor deprinderi durabile, care o ajută să se poziționeze mai obiectiv și flexibil în raport cu dificultățile resimțite.</p>\
     <p>Terapia cognitiv-comportamentală are la bază premisa că gândurile (cognițiile sau modul în care interpretezi o situație), emoțiile și comportamentele sunt interconectate. Imaginează-ți că sunt ca un „lanț”. Dacă schimbi o verigă, se schimbă tot lanțul.</p>\
@@ -79,6 +83,8 @@ export const ArticlesTexts: InfoStructure[] = [
     route: '/article/3',
     title: 'Dacă nu este doar timiditate? Când teama de a fi evaluat și blocajele emoționale în public devin semnale că este timpul să ceri ajutor?',
     summary: `Se spune că peste 70% dintre oameni prezintă teama de a vorbi în public, iar ceilalți nu vor să recunoască.`,
+    image: 'assets/images/article-anxietate-sociala.svg',
+    imageAlt: 'anxietatea socială și vorbitul în public',
     contents: `<p>Se spune că peste 70% dintre oameni prezintă teama de a vorbi în public, iar ceilalți nu vor să recunoască.</p>\
     <p>Prin urmare, este probabil că, la întrebarea „Ai emoții când trebuie să vorbești în public?”, vei răspunde „Da, normal!”.</p>\
     <p>Dar...</p>\

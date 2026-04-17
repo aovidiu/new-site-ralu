@@ -2,7 +2,7 @@ import { Routes } from '@angular/router';
 import { HomeComponent } from './home-component/home-component';
 import { PsihoterapyComponent } from './psihoterapy-component/psihoterapy-component';
 import { ContactEmailComponent } from './contact-email-component/contact-email-component';
-import { LibraryComponent } from './library-component/library-component';
+import { LibraryComponent } from './courses-library-component/courses-library-component';
 import { ArticleComponent } from './article-component/article-component';
 import { CourseComponent } from './course-component/course-component';
 
