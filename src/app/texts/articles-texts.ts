@@ -53,7 +53,7 @@ export const ArticlesTexts: InfoStructure[] = [
     title: 'Ce este și cum poți afla dacă psihoterapia-cognitiv comportamentală este potrivită pentru tine?',
     summary: `Terapia cognitiv-comportamentală este o intervenție psihologică validată științific, de scurtă durată, care ajută persoana să-și dezvolte abilități de autoreglare și să facă schimbări practice în viața de zi cu zi.`,
     imageIcon: 'assets/images/article-terapie-cbt.svg',
-    image: 'assets/images/articol-psihoterapie-1.png',
+    image: 'assets/images/articol-psihoterapie-2.png',
     imageAlt: 'terapia cognitiv-comportamentală',
     contents: `<p>Terapia Cognitiv-Comportamentală (în engleză Cognitive Behavioral Therapy - CBT) este o formă de intervenție psihologică validată științific, axată pe rezolvarea de probleme, de durată relativ scurtă, încurajând persoana să dezvolte abilități de autoreglare și să facă schimbările dorite în viața de zi cu zi.</p>\
     <p>Este un proces colaborativ, terapeutul ghidează persoana în a înțelege cu acuratețe maniera în care a dezvoltat anumite probleme și pune accentul pe învățarea unor deprinderi durabile, care o ajută să se poziționeze mai obiectiv și flexibil în raport cu dificultățile resimțite.</p>\

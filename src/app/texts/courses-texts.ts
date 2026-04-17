@@ -23,9 +23,9 @@ export const CoursesTexts: InfoStructure[] = [
         <li>modalități practice de gestionare - tehnici de reglare emoțională, de relaxare și de organizare a resurselor de timp și energie</li>\
       </ul>\
       <p>Pentru ca fiecare persoană să poată beneficia de tot cee ace oferă cursul, grupurile sunt limitate la 10 persoane</p>\
-      <p>Metode de formare: prezentare, exerciții practice, discuții interactive</p>
-      <p>Format: fizic</p>\
-      <p>Durata: 8 ore (cu pauză de 1 ora)</p>`
+      <p><strong>Metode de formare: prezentare, exerciții practice, discuții interactive</strong></p>
+      <p><strong>Format: fizic</strong></p>\
+      <p><strong>Durata: 8 ore (cu pauză de 1 ora)</strong></p>`
   },
   {
     route: '/course/2',
@@ -48,13 +48,14 @@ export const CoursesTexts: InfoStructure[] = [
       <li>instrumente practice ce pot contribui la reconstruirea identității</li>\
     </ul>\
     <p>Pentru ca fiecare persoană să poată beneficia de tot cee ace oferă cursul, grupurile sunt limitate la 10 persoane</p>\
-    <p>Metode de formare: prezentare, exerciții practice, discuții interactive </p>
-    <p>Format: fizic</p>\
-    <p>Durata: 8 ore (cu pauză de 1 ora)</p>`
+    <p><strong>Metode de formare: prezentare, exerciții practice, discuții interactive </strong></p>
+    <p><strong>Format: fizic</strong></p>\
+    <p><strong>Durata: 8 ore (cu pauză de 1 ora)</strong></p>`
   },
   {
     route: '/course/3',
     title: "Cum depășești teama de a vorbi în public",
+    image: 'assets/images/articol-vorbire.jpg',
     summary: `Abilitatea de a vorbi în public este un predictor puternic pentru reușita profesională și dezvoltarea carierei.`,
     contents: `<p>Abilitatea de a vorbi în public este un predictor puternic pentru reușita profesională și dezvoltarea carierei.</p>\
     <p>Sondajele arată că 70% dintre profesioniști din domenii diferite cred că abilitățile de prezentare sunt critice pentru succesul în muncă.</p>\
@@ -69,16 +70,16 @@ export const CoursesTexts: InfoStructure[] = [
       <li>vei învăța cum să te adaptezi la audiență pentru a maximiza impactul personal;</li>\
       <li>vei practica abilități de construire a unui discurs și de interacțiune / comunicare în public speaking.</li>\
     </ul>\
-    <p>Format: fizic; 10 ore desfășurate pe parcursul a 2 zile.</p>\
     <p>Pentru ca fiecare persoană să poată beneficia de tot ceea ce oferă cursul, grupurile sunt limitate la 7 persoane.</p>\
     <p>După curs, la cerere, se pot organiza ședințe de consiliere individuală pentru realizarea unui plan personalizat de dezvoltare a abilităților de public speaking.</p>\
-    <p>Metode de formare: exerciții practice, jocuri de rol, realizare de prezentări și feedback individual din partea psihologului, discuții interactive.</p>`
+    <p><strong>Format: fizic; 10 ore desfășurate pe parcursul a 2 zile.</strong></p>\
+    <p><strong>Metode de formare: exerciții practice, jocuri de rol, realizare de prezentări și feedback individual din partea psihologului, discuții interactive.</strong></p>`
   },
   {
     route: '/course/4',
     title: "Abilități esențiale pentru lucrul în echipă",
     summary: `Organizațiile pun un accent din ce în ce mai mare pe colaborare, iar performanța individuală este strâns legată de capacitatea de a lucra eficient cu ceilalți.`,
-    image: 'assets/images/cursuri.png',
+    image: 'assets/images/curs-echipa.jpg',
     contents: `<p>Organizațiile pun un accent din ce în ce mai mare pe colaborare, iar studiile arată că performanța individuală este strâns legată de capacitatea de a lucra eficient cu ceilalți.</p>\
     <p>Abilitățile de lucru în echipă nu mai sunt doar „nice to have”, ci esențiale pentru performanța profesională.</p>\
     <p>Printre cele mai importante competențe apreciate de angajatori se numără: comunicarea eficientă, colaborarea și spiritul de echipă, rezolvarea conflictelor, gândirea critică în luarea deciziilor și rezolvarea de probleme, adaptabilitatea și flexibilitatea.</p>\
@@ -91,8 +92,8 @@ export const CoursesTexts: InfoStructure[] = [
       <li>vei exersa abilități interpersonale pentru a construi relații de lucru bazate pe încredere;</li>\
       <li>vei pune în practică strategii de luare a deciziilor în echipă și vei aplica gândirea critică pentru îmbunătățirea calității soluțiilor găsite.</li>\
     </ul>\
-    <p>Format: fizic; 10 ore desfășurate pe parcursul a 2 zile (5h + 5h).</p>\
     <p>Pentru ca fiecare persoană să poată beneficia de tot ceea ce oferă cursul, grupurile sunt limitate la 8-12 persoane.</p>\
-    <p>Metode de formare: exerciții practice, jocuri de echipă, feedback individual și de echipă, discuții interactive.</p>`
+    <p><strong>Format: fizic; 10 ore desfășurate pe parcursul a 2 zile (5h + 5h).</strong></p>\
+    <p><strong>Metode de formare: exerciții practice, jocuri de echipă, feedback individual și de echipă, discuții interactive.</strong></p>`
   }
 ];

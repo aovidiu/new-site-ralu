@@ -26,5 +26,7 @@ export class PsihoterapyComponent {
       <li>Dacă îți dorești să îți înțelegi mai bine reacțiile și să înveți să răspunzi mai bine provocărilor emoționale</li>
       <li>Dacă te confrunți cu stări de anxietate, depresie, teamă de eșec sau alte dificultăți emoționale</li>
     </ul>
+    <p><strong>Durata unei ședințe: 50 minute</strong></p>
+    <p><strong>Tarif: 200lei / ședința (la achiziționarea unui pachet de 5 ședințe se ofera un discount de 15%)</strong></p>
     <h2>. . .te așteptăm să ne contactezi</h2>`;
 }
