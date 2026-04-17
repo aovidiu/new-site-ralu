@@ -1,5 +1,5 @@
 <div class="back-button-container">
-  <a routerLink="/" fragment="articles" class="back-button">↩ Back</a>
+  <app-back-button [routerLink]="'/'" fragment="articles"></app-back-button>
 </div>
 <div class="article-container" *ngIf="selectedArticle">
   <h1>{{ selectedArticle.title }}</h1>
@@ -8,6 +8,11 @@
   </div>
   <div class="article-content" [innerHTML]="articleContents"></div>
 </div>
+
+<div class="back-button-container back-button-bottom mobile-only" *ngIf="selectedArticle">
+  <app-back-button [routerLink]="'/'" fragment="articles"></app-back-button>
+</div>
+
 <div class="article-container" *ngIf="!selectedArticle">
   <p>Articolul nu a fost găsit.</p>
 </div>

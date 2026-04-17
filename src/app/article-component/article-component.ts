@@ -3,10 +3,11 @@ import { CommonModule } from '@angular/common';
 import { ActivatedRoute, RouterModule } from '@angular/router';
 import { DomSanitizer } from '@angular/platform-browser';
 import { ArticlesTexts } from '../texts/articles-texts';
+import { BackButtonComponent } from '../back-button-component/back-button-component';
 
 @Component({
   selector: 'app-article-component',
-  imports: [CommonModule, RouterModule],
+  imports: [CommonModule, RouterModule, BackButtonComponent],
   templateUrl: './article-component.html',
   styleUrl: './article-component.scss',
 })

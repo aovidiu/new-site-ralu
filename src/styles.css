@@ -93,6 +93,10 @@
   transform: translateX(-1px);
 }
 
+.back-button-container.back-button-bottom {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .back-button-container {
     position: relative;
@@ -100,6 +104,12 @@
     left: auto;
     z-index: 1;
     margin: 0.6rem 0 0.35rem;
+    padding-left: 0.5rem;
+  }
+
+  .back-button-container.back-button-bottom {
+    display: block;
+    margin: 1.5rem 0 0.5rem;
     padding-left: 0.5rem;
   }
 }

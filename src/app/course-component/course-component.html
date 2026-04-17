@@ -1,5 +1,5 @@
 <div class="back-button-container">
-  <a routerLink="/library" class="back-button">↩ {{ backButtonLabel }}</a>
+  <app-back-button [routerLink]="'/library'" [label]="backButtonLabel"></app-back-button>
 </div>
 
 <section class="course-page" *ngIf="selectedCourse as course">
@@ -16,7 +16,11 @@
     />
     <div class="course-text" [innerHTML]="courseContents"></div>
   </article>
+  <div class="back-button-container back-button-bottom mobile-only">
+    <app-back-button [routerLink]="'/library'" [label]="backButtonLabel"></app-back-button>
+  </div>
 </section>
+
 <div class="course-page" *ngIf="!selectedCourse">
   <p>Cursul nu a fost găsit.</p>
 </div>

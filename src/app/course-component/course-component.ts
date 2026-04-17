@@ -3,11 +3,12 @@ import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { ActivatedRoute, RouterModule } from '@angular/router';
 import { CoursesTexts } from '../texts/courses-texts';
 import { DomSanitizer } from '@angular/platform-browser';
+import { BackButtonComponent } from '../back-button-component/back-button-component';
 
 @Component({
   selector: 'app-course-component',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [RouterModule, CommonModule, NgOptimizedImage],
+  imports: [RouterModule, CommonModule, NgOptimizedImage, BackButtonComponent],
   templateUrl: './course-component.html',
   styleUrls: ['./course-component.scss'],
 })
