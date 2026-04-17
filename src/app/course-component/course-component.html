@@ -2,17 +2,21 @@
   <a routerLink="/library" class="back-button">↩ {{ backButtonLabel }}</a>
 </div>
 
-<section class="course-page">
+<section class="course-page" *ngIf="selectedCourse as course">
   <article class="course-article">
-    <h1>{{ title }}</h1>
+    <h1>{{ course.title }}</h1>
 
     <img
       class="course-image float-right"
-      ngSrc="assets/images/cursuri.png"
-      width="220"
-      height="220"
+      [ngSrc]="course.image ?? 'assets/images/cursuri.png'"
+      width="420"
+      height="420"
       priority
+      [alt]="course.title"
     />
-    <div class="course-text" [innerHTML]="contents"></div>
-</article>
+    <div class="course-text" [innerHTML]="courseContents"></div>
+  </article>
 </section>
+<div class="course-page" *ngIf="!selectedCourse">
+  <p>Cursul nu a fost găsit.</p>
+</div>

@@ -1,36 +1,37 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { NgOptimizedImage } from '@angular/common';
+import { ChangeDetectionStrategy, Component, SecurityContext } from '@angular/core';
+import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { ActivatedRoute, RouterModule } from '@angular/router';
 import { CoursesTexts } from '../texts/courses-texts';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-course-component',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [RouterModule, NgOptimizedImage],
+  imports: [RouterModule, CommonModule, NgOptimizedImage],
   templateUrl: './course-component.html',
-  styleUrl: './course-component.scss',
+  styleUrls: ['./course-component.scss'],
 })
 export class CourseComponent {
-  constructor(private route: ActivatedRoute) {}
+  constructor(private sanitizer: DomSanitizer,private route: ActivatedRoute) {}
 
   readonly backButtonLabel = 'Back';
 
-  courses = CoursesTexts;
-  title = '';
-  contents = '';
+  allCourses = CoursesTexts;
+  selectedCourse = null as (typeof CoursesTexts)[number] | null;
+  courseContents = '';
 
   ngOnInit() {
     this.route.paramMap.subscribe(params => {
-      this.title = '';
-      this.contents = '';
+      this.selectedCourse = null;
+      this.courseContents = '';
 
       const id = params.get('id') ?? '';
       const index = Number(id) - 1;
       if (id && Number.isInteger(index) && index >= 0) {
-        const course = this.courses[index];
+        const course = this.allCourses[index];
         if (course) {
-          this.title = course.title;
-          this.contents = course.contents;
+          this.selectedCourse = course;
+          this.courseContents = this.sanitizer.sanitize(SecurityContext.HTML, course.contents) ?? '';
         }
       }
     });

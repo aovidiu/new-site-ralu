@@ -14,21 +14,21 @@ export class ArticleComponent {
   constructor(private sanitizer: DomSanitizer, private route: ActivatedRoute) {}
 
   allArticles = ArticlesTexts;
-  safeArticleContents = '';
-  titleArticle = '';
+  selectedArticle = null as (typeof ArticlesTexts)[number] | null;
+  articleContents = '';
 
   ngOnInit() {
     this.route.paramMap.subscribe(params => {
-      this.safeArticleContents = '';
-      this.titleArticle = '';
+      this.selectedArticle = null;
+      this.articleContents = '';
 
       const id = params.get('id') ?? '';
       const index = Number(id) - 1;
       if (id && Number.isInteger(index) && index >= 0) {
         const article = this.allArticles[index];
         if (article) {
-          this.safeArticleContents = this.sanitizer.sanitize(SecurityContext.HTML, article.contents) ?? '';
-          this.titleArticle = article.title;
+          this.selectedArticle = article;
+          this.articleContents = this.sanitizer.sanitize(SecurityContext.HTML, article.contents) ?? '';
         }
       }
     });

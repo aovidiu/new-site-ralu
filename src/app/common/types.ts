@@ -3,6 +3,7 @@ export type InfoStructure = {
   summary: string;
   route: string;
   contents: string;
+  imageIcon?: string;
   image?: string;
   imageAlt?: string;
 };

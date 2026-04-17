@@ -6,6 +6,7 @@ export const CoursesTexts: InfoStructure[] = [
     title: "Dincolo de stres: cum să facem pași spre o viață mai echilibrată in relațiile de cuplu și în cele profesionale",
     summary: `Stresul este una dintre provocările constante ale vieții moderne, fiind tot mai prezent în ritmul alert \
       în care trăim.`,
+    image: 'assets/images/curs-stres.png',
     contents: 
       `<p>Stresul este una dintre provocările constante ale vieții moderne, fiind tot mai prezent în ritmul alert \
       în care trăim. De multe ori, ne însoțește în tăcere, acumulându-se treptat și afectându-ne starea de bine, \
@@ -31,6 +32,7 @@ export const CoursesTexts: InfoStructure[] = [
     title: "Cine sunt eu acum? Reconstruirea identității după o despărțire (divort, doliu, separare)",
     summary: `Despărțirile – fie că vorbim despre divorț, doliu sau separare – pot aduce cu ele nu doar \
     durere, ci și o profundă pierdere a reperelor personale. `,
+    image: 'assets/images/curs-identitate.png',
     contents: `<p>Despărțirile – fie că vorbim despre divorț, doliu sau separare – pot aduce cu ele nu doar durere, \
     ci și o profundă pierdere a reperelor personale. În astfel de momente, întrebarea „Cine sunt eu acum?” devine adesea centrală.</p>\
     <p>Acest workshop își propune să ofere un spațiu sigur și susținător în care participanții să își \
@@ -76,6 +78,7 @@ export const CoursesTexts: InfoStructure[] = [
     route: '/course/4',
     title: "Abilități esențiale pentru lucrul în echipă",
     summary: `Organizațiile pun un accent din ce în ce mai mare pe colaborare, iar performanța individuală este strâns legată de capacitatea de a lucra eficient cu ceilalți.`,
+    image: 'assets/images/cursuri.png',
     contents: `<p>Organizațiile pun un accent din ce în ce mai mare pe colaborare, iar studiile arată că performanța individuală este strâns legată de capacitatea de a lucra eficient cu ceilalți.</p>\
     <p>Abilitățile de lucru în echipă nu mai sunt doar „nice to have”, ci esențiale pentru performanța profesională.</p>\
     <p>Printre cele mai importante competențe apreciate de angajatori se numără: comunicarea eficientă, colaborarea și spiritul de echipă, rezolvarea conflictelor, gândirea critică în luarea deciziilor și rezolvarea de probleme, adaptabilitatea și flexibilitatea.</p>\
