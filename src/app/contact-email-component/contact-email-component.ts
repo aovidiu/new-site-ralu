@@ -1,26 +1,34 @@
-import { CommonModule } from '@angular/common';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { ChangeDetectorRef, Component, ViewChild } from '@angular/core';
+import { ChangeDetectorRef, Component, ViewChild, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-contact-email-component',
-  imports: [ CommonModule, FormsModule, RouterModule],
+  imports: [FormsModule, RouterModule],
   templateUrl: './contact-email-component.html',
   styleUrl: './contact-email-component.css',
 })
 export class ContactEmailComponent {
+  private http = inject(HttpClient);
+  private cdr = inject(ChangeDetectorRef);
+  private meta = inject(Meta);
+  private title = inject(Title);
 
   @ViewChild('contactForm') contactForm!: NgForm;
-
-  constructor(private http: HttpClient, private cdr: ChangeDetectorRef) {}
 
   successMessage: string = '';
   errorMessage: string = '';
   sending: boolean = false;
   mesajTrimis: string = 'Mesaj trimis!';
   formTitle: string = 'Formular Contact';
+
+  ngOnInit() {
+    this.title.setTitle('Contact - Cabinet Psihologie București');
+    this.meta.updateTag({ name: 'description', content: 'Contactați cabinetul de psihologie din București pentru programări și consultații. Suntem aici să vă ajutăm să depășiți dificultățile emoționale și să vă îmbunătățiți calitatea vieții.' });
+    this.meta.updateTag({ name: 'keywords', content: 'contact cabinet psihologie București, programare terapie București, consultație psihologică București, ajutor emoțional București, cabinet psihologie București' });
+  }
 
   ngAfterViewInit() {
     this.contactForm.valueChanges?.subscribe(() => {

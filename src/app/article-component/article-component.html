@@ -1,18 +1,25 @@
 <div class="back-button-container">
   <app-back-button [routerLink]="'/'" fragment="articles"></app-back-button>
 </div>
-<div class="article-container" *ngIf="selectedArticle">
-  <h1>{{ selectedArticle.title }}</h1>
-  <div class="article-image" *ngIf="selectedArticle.image">
-    <img [src]="selectedArticle.image" [alt]="selectedArticle.imageAlt || selectedArticle.title" />
+
+@if (selectedArticle) {
+  <div class="article-container">
+    <h1>{{ selectedArticle.title }}</h1>
+    @if (selectedArticle.image) {
+      <div class="article-image">
+        <img [src]="selectedArticle.image" [alt]="selectedArticle.imageAlt || selectedArticle.title" />
+      </div>
+    }
+    <div class="article-content" [innerHTML]="articleContents"></div>
   </div>
-  <div class="article-content" [innerHTML]="articleContents"></div>
-</div>
 
-<div class="back-button-container back-button-bottom mobile-only" *ngIf="selectedArticle">
-  <app-back-button [routerLink]="'/'" fragment="articles"></app-back-button>
-</div>
+  <div class="back-button-container back-button-bottom mobile-only">
+    <app-back-button [routerLink]="'/'" fragment="articles"></app-back-button>
+  </div>
+}
 
-<div class="article-container" *ngIf="!selectedArticle">
-  <p>Articolul nu a fost găsit.</p>
-</div>
+@if (!selectedArticle) {
+  <div class="article-container">
+    <p>Articolul nu a fost găsit.</p>
+  </div>
+}

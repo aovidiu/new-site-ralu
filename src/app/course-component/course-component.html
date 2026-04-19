@@ -2,25 +2,29 @@
   <app-back-button [routerLink]="'/library'" [label]="backButtonLabel"></app-back-button>
 </div>
 
-<section class="course-page" *ngIf="selectedCourse as course">
-  <article class="course-article">
-    <h1>{{ course.title }}</h1>
+@if (selectedCourse) {
+  <section class="course-page">
+    <article class="course-article">
+      <h1>{{ selectedCourse.title }}</h1>
 
-    <img
-      class="course-image float-right"
-      [ngSrc]="course.image ?? 'assets/images/cursuri.png'"
-      width="420"
-      height="420"
-      priority
-      alt="curs"
-    />
-    <div class="course-text" [innerHTML]="courseContents"></div>
-  </article>
-  <div class="back-button-container back-button-bottom mobile-only">
-    <app-back-button [routerLink]="'/library'" [label]="backButtonLabel"></app-back-button>
+      <img
+        class="course-image float-right"
+        [ngSrc]="selectedCourse.image ?? 'assets/images/cursuri.png'"
+        width="420"
+        height="420"
+        priority
+        alt="curs"
+      />
+      <div class="course-text" [innerHTML]="courseContents"></div>
+    </article>
+    <div class="back-button-container back-button-bottom mobile-only">
+      <app-back-button [routerLink]="'/library'" [label]="backButtonLabel"></app-back-button>
+    </div>
+  </section>
+}
+
+@if (!selectedCourse) {
+  <div class="course-page">
+    <p>Cursul nu a fost găsit.</p>
   </div>
-</section>
-
-<div class="course-page" *ngIf="!selectedCourse">
-  <p>Cursul nu a fost găsit.</p>
-</div>
+}

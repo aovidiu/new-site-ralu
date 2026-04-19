@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://raluca-psihologie.github.io/new-site-ralu/sitemap.xml

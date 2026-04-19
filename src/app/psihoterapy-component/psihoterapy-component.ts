@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-psihoterapy',
@@ -9,6 +10,9 @@ import { RouterModule } from '@angular/router';
   styleUrl: './psihoterapy-component.scss'
 })
 export class PsihoterapyComponent {
+  private meta = inject(Meta);
+  private title = inject(Title);
+
   contents1 = `
     <p>Procesul terapeutic este un drum al descoperirii și al transformării. Nu este întotdeauna simplu, dar este un spațiu în care poți fi tu însuți, fără măști și fără teamă de judecată.</p>
     <p>În această călătorie vei fi însoțit cu respect și empatie, astfel încât să poți înțelege, accepta și transforma ceea ce trăiești.</p>
@@ -29,4 +33,10 @@ export class PsihoterapyComponent {
     <p><strong>Durata unei ședințe: 50 minute</strong></p>
     <p><strong>Tarif: 200lei / ședința (la achiziționarea unui pachet de 5 ședințe se ofera un discount de 15%)</strong></p>
     <h2>. . .te așteptăm să ne contactezi</h2>`;
+
+  ngOnInit() {
+    this.title.setTitle('Psihoterapie București - Cabinet Psihologie');
+    this.meta.updateTag({ name: 'description', content: 'Servicii de psihoterapie cognitiv-comportamentală în București. Ajutăm persoanele să depășească anxietatea, depresia și alte dificultăți emoționale prin ședințe profesioniste și confidențiale.' });
+    this.meta.updateTag({ name: 'keywords', content: 'psihoterapie București, terapie cognitiv comportamentală București, anxietate București, depresie București, stres București, terapie online București, cabinet psihologie București' });
+  }
 }

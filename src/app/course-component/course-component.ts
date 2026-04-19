@@ -1,19 +1,23 @@
-import { ChangeDetectionStrategy, Component, SecurityContext } from '@angular/core';
-import { CommonModule, NgOptimizedImage } from '@angular/common';
+import { ChangeDetectionStrategy, Component, SecurityContext, inject } from '@angular/core';
+import { NgOptimizedImage } from '@angular/common';
 import { ActivatedRoute, RouterModule } from '@angular/router';
 import { CoursesTexts } from '../texts/courses-texts';
 import { DomSanitizer } from '@angular/platform-browser';
 import { BackButtonComponent } from '../back-button-component/back-button-component';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-course-component',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [RouterModule, CommonModule, NgOptimizedImage, BackButtonComponent],
+  imports: [RouterModule, NgOptimizedImage, BackButtonComponent],
   templateUrl: './course-component.html',
   styleUrls: ['./course-component.scss'],
 })
 export class CourseComponent {
-  constructor(private sanitizer: DomSanitizer,private route: ActivatedRoute) {}
+  private sanitizer = inject(DomSanitizer);
+  private route = inject(ActivatedRoute);
+  private meta = inject(Meta);
+  private title = inject(Title);
 
   readonly backButtonLabel = 'Back';
 
@@ -33,6 +37,11 @@ export class CourseComponent {
         if (course) {
           this.selectedCourse = course;
           this.courseContents = this.sanitizer.sanitize(SecurityContext.HTML, course.contents) ?? '';
+
+          // Set SEO meta tags
+          this.title.setTitle(`${course.title} - Cabinet Psihologie București`);
+          this.meta.updateTag({ name: 'description', content: `Curs de dezvoltare personală București: ${course.title}. Învață să gestionezi stresul, să îmbunătățești relațiile și să îți dezvolți abilitățile personale cu specialiști din București.` });
+          this.meta.updateTag({ name: 'keywords', content: `curs dezvoltare personală București, ${course.title.toLowerCase()} București, psihologie București, terapie București, dezvoltare personală București` });
         }
       }
     });
