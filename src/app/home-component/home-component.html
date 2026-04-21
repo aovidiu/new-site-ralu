@@ -1,53 +1,104 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "@id": "https://raluca-psihologie.github.io/new-site-ralu/",
-  "name": "Cabinet Psihologie",
-  "description": "Cabinet de psihologie din București specializat în terapie cognitiv-comportamentală, cursuri de dezvoltare personală și consiliere psihologică",
-  "url": "https://raluca-psihologie.github.io/new-site-ralu/",
-  "logo": "https://raluca-psihologie.github.io/new-site-ralu/assets/images/logo.png",
-  "image": "https://raluca-psihologie.github.io/new-site-ralu/assets/images/logo.png",
-  "telephone": "",
+  "@type": ["LocalBusiness", "Psychologist"],
+  "@id": "https://psihoterapie-training.ro/#business",
+  "name": "Cabinet Psihologie București - Psihoterapie și Dezvoltare Personală",
+  "url": "https://psihoterapie-training.ro/",
+  "logo": "https://psihoterapie-training.ro/assets/images/logo.png",
+  "image": "https://psihoterapie-training.ro/assets/images/logo.png",
+  "description": "Cabinet de psihologie din București specializat în psihoterapie cognitiv-comportamentală, consiliere psihologică și cursuri de dezvoltare personală.",
+  
+  "telephone": "+40745087428",
+  
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "București",
+    "addressRegion": "București",
+    "postalCode": "021172",
+	"streetAddress": "Soseaua Colentina 2B",
     "addressCountry": "RO"
   },
+  "founder": {
+	"@type": "Person",
+	"name": "Albu Raluca"
+  },
+
   "geo": {
     "@type": "GeoCoordinates",
-    "latitude": "44.4268",
-    "longitude": "26.1025"
+    "latitude": 44.4268,
+    "longitude": 26.1025
   },
+
   "areaServed": {
     "@type": "City",
     "name": "București"
   },
+
   "sameAs": [
     "https://www.facebook.com/cabinetpsihologie"
   ],
+
   "contactPoint": {
     "@type": "ContactPoint",
-    "telephone": "0745087428",
+    "telephone": "+40745087428",
     "contactType": "customer service",
-    "url": "https://raluca-psihologie.github.io/new-site-ralu/send-message",
-    "availableLanguage": "Romanian"
+    "areaServed": "RO",
+    "availableLanguage": ["Romanian"]
   },
-  "offers": [
+
+  "openingHoursSpecification": [
     {
-      "@type": "Service",
-      "name": "Psihoterapie cognitiv-comportamentală București",
-      "description": "Ședințe de terapie pentru depășirea dificultăților emoționale în București"
-    },
-    {
-      "@type": "Service",
-      "name": "Cursuri dezvoltare personală București",
-      "description": "Cursuri online pentru managementul stresului și îmbunătățirea relațiilor, disponibile în București"
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "09:00",
+      "closes": "19:00"
     }
   ],
+
   "priceRange": "$$",
+  "currenciesAccepted": "RON",
   "paymentAccepted": "Cash, Credit Card",
-  "currenciesAccepted": "RON"
+
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Servicii Psihologice",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Psihoterapie cognitiv-comportamentală București",
+		      "serviceType": "Psihoterapie cognitiv-comportamentală",
+          "description": "Ședințe de terapie pentru anxietate, depresie și stres."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Consiliere psihologică",
+		      "serviceType": "Consiliere psihologică",
+          "description": "Sprijin emoțional și consiliere pentru diverse dificultăți personale."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Cursuri dezvoltare personală",
+		      "serviceType": "Formare și dezvoltare personală",
+          "description": "Cursuri pentru gestionarea stresului și dezvoltare personală."
+        }
+      }
+    ]
+  }
 }
 </script>
 
