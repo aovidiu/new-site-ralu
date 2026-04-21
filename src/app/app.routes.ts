@@ -8,7 +8,7 @@ import { CourseComponent } from './course-component/course-component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'psihotrerapy', component: PsihoterapyComponent },
+  { path: 'psihoterapy', component: PsihoterapyComponent },
   { path: 'send-message', component: ContactEmailComponent},
   { path: 'library', component: LibraryComponent },
   { path: 'article/:id', component: ArticleComponent },

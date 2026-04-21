@@ -7,17 +7,17 @@ $card-gap: 0.5rem;
 $content-gap: 16px;
 $card-padding: 1rem 1rem 1.2rem;
 
-.psihotrerapy-page {
+.psihoterapy-page {
   padding: $page-padding;
   min-height: tokens.$page-min-height;
 }
 
-.psihotrerapy-container {
+.psihoterapy-container {
   width: shared.$card-width;
   margin: 0 auto;
 }
 
-.psihotrerapy-card {
+.psihoterapy-card {
   @include shared.content-card($card-padding, tokens.$content-soft-background);
   display: flex;
   flex-direction: column;
@@ -27,11 +27,11 @@ $card-padding: 1rem 1rem 1.2rem;
   align-items: stretch;
 }
 
-.psihotrerapy-title {
+.psihoterapy-title {
   @include shared.content-title;
 }
 
-.psihotrerapy-content {
+.psihoterapy-content {
   display: flex;
   flex-direction: column;
   gap: $content-gap;
@@ -72,16 +72,16 @@ $card-padding: 1rem 1rem 1.2rem;
 }
 
 @media (max-width: 768px) {
-  .psihotrerapy-page {
+  .psihoterapy-page {
     padding: $page-padding-mobile;
     min-height: auto;
   }
 
-  .psihotrerapy-card {
+  .psihoterapy-card {
     padding: tokens.$mobile-card-padding;
   }
 
-  .psihotrerapy-title {
+  .psihoterapy-title {
     line-height: 1.25;
     padding-bottom: 12px;
   }
