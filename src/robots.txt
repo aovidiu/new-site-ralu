@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://raluca-psihologie.github.io/new-site-ralu/sitemap.xml
+Sitemap: https://psihoterapie-training.ro/sitemap.xml
