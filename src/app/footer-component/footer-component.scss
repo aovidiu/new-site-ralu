@@ -1,4 +1,5 @@
 $footer-padding: 45px;
+$info-gap: 10px;
 
 
 .footer{
@@ -36,7 +37,7 @@ $footer-padding: 45px;
 
 .contact-item {
 	display: flex;
-	gap: 10px;
+	gap: $info-gap;
 	align-items: center;
 	justify-content: flex-start;
 	width: 100%;
@@ -68,6 +69,7 @@ $footer-padding: 45px;
 	justify-content: center;
 	line-height: 0;
 	text-decoration: none;
+	gap: $info-gap;
 }
 
 .facebook-icon {

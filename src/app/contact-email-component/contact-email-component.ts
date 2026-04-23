@@ -64,10 +64,10 @@ export class ContactEmailComponent {
       },
       error: (err) => {
         var serverError: string = err.error.error;
-        if(serverError.toLowerCase().includes("validation")) {
+        if(serverError && serverError.toLowerCase().includes("validation")) {
           serverError = "Adresa email invalida";
         } else {
-          serverError = '';
+          serverError = 'Eroare necunoscuta. Va rugam sa incercati din nou mai tarziu.';
         }
         this.errorMessage = 'Eroare:  ' +  serverError;
         this.successMessage = '';
