@@ -1,4 +1,11 @@
-Cloudfare: aovidiu200@yahoo.com/Aovidiu2000@
+Cloudfare: 
+aovidiu200@yahoo.com/Aovidiu2000@
+
+Domeniul este luat de la https://rotld.ro: psihoterapie-training.ro
+aovidiu200@yahoo.com / Aovidiu2000@
+
+https://formspree.io/login?next=/forms?
+aovidiu2000@yahoo.com / Raluca123@
 
 cum rulez local cloudeFare send message
 1. deschide un terminal nou pe lang cel deja cu ng serve
@@ -14,8 +21,7 @@ cum fac update la adresa de serveremail FORMSPREE
 4. npm run deploy (deploy la noul config pe serverul cloudfare)
 ATENTIE: in fisierul: .env.local este tinut FORMSPREE url in clar  FORMSPREE_URL=https://formspree.io/f/xreagzzg si se modifica si aici
 
-Domeniul este luat de la https://rotld.ro: psihoterapie-training.ro
-aovidiu200@yahoo.com / Aovidiu2000@
+
 
 Google Search Console - pentru indexare SEO , google search engine indexare pagini
 
