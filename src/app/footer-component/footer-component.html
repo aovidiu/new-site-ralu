@@ -7,7 +7,9 @@
       </div>
       <div class="contact-item">
         <img class="icon" src="assets/images/email_1.png" alt="email">
-        <p>{{ EmailRaluca }}</p>
+        <a href="mailto:{{ EmailRaluca }}" target="_blank" rel="noopener noreferrer">
+          {{ EmailRaluca }}
+        </a>
       </div>
       <div class="contact-item">
         <a
@@ -15,9 +17,10 @@
           [href]="FacebookRaluca"
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="Facebook Raluca"
+          aria-label="Facebook"
         >
           <img class="facebook-icon" src="assets/images/facebook.svg" alt="">
+          <span>Facebook</span>
         </a>
       </div>
     </div>
@@ -36,7 +39,9 @@
       </div>
       <div class="contact-item">
         <img class="icon" src="assets/images/email_1.png" alt="email">
-        <p>{{ EmailAna }}</p>
+        <a href="mailto:{{ EmailAna }}" target="_blank" rel="noopener noreferrer">
+          {{ EmailAna }}
+        </a>
       </div>
     </div>
   </div>
