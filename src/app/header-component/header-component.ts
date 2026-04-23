@@ -30,15 +30,6 @@ export class HeaderComponent {
   }
 
   closeMenuContact() {
-    this.closeMenu()
-    this.scrollToFooter();
+    this.closeMenu();
   }
-
-  scrollToFooter(): void {
-  document.getElementById('footer')?.scrollIntoView({
-    behavior: 'smooth',
-    block: 'start'
-  });
-}
-
 }
