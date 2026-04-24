@@ -49,6 +49,7 @@ export class ContactEmailComponent {
     this.errorMessage = '';
 
     const url = 'https://contact-worker.message-contact.workers.dev/contact';
+    // const url = 'https://weathered-firefly-13b9.message-contact.workers.dev';
     // const url = 'http://127.0.0.1:8787/contact';
     const headers = new HttpHeaders({ 'Accept': 'application/json' });
     
