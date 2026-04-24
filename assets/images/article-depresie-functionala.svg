@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 120" role="img" aria-labelledby="title desc">
+  <title id="title">Ilustrație depresie funcțională</title>
+  <desc id="desc">O ilustrație minimalistă cu o persoană, un nor și o rază de lumină.</desc>
+  <rect width="160" height="120" rx="18" fill="#fffaf4"/>
+  <rect x="10" y="10" width="140" height="100" rx="14" fill="#f3e7d8" stroke="#e6d5c3"/>
+  <circle cx="80" cy="58" r="24" fill="#eadcc9"/>
+  <path d="M67 56c4 4 8 6 13 6s9-2 13-6" fill="none" stroke="#8a7461" stroke-linecap="round" stroke-width="3"/>
+  <circle cx="71" cy="49" r="2.5" fill="#5e4a3b"/>
+  <circle cx="89" cy="49" r="2.5" fill="#5e4a3b"/>
+  <path d="M56 87c7-10 16-15 24-15s17 5 24 15" fill="none" stroke="#b7794c" stroke-linecap="round" stroke-width="4"/>
+  <path d="M108 28c8-10 24-10 31 0 3 4 4 9 2 14-2 5-7 8-12 8h-18c-9 0-15-9-11-17 1-2 4-4 8-5z" fill="#ffffff" opacity="0.9"/>
+  <path d="M123 23l4-8m9 10l8-3m-6 14l7 4" stroke="#d8b36c" stroke-linecap="round" stroke-width="2.5"/>
+</svg>

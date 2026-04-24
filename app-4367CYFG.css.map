@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/app.css"],
+  "sourcesContent": [".page {\r\n  display: flex;\r\n  flex-direction: column;\r\n  min-height: 100vh;\r\n  \r\n  background: var(--theme-bg);\r\n  color: var(--theme-text);\r\n  font-family: Arial, sans-serif;  \r\n}\r\n\r\n.content {\r\n  flex: 6;\r\n  padding: 0 1rem 1rem 1rem;\r\n  background: linear-gradient(180deg, var(--theme-surface-soft) 0%, var(--theme-surface) 100%);\r\n  position: relative;\r\n\r\n  display: flex;\r\n  flex-direction: column;\r\n}\r\n\r\n.content-header,\r\n.content-footer {\r\n  flex: 0 0 auto;   /* natural height */\r\n}\r\n\r\n.content-header {\r\n  position: sticky;\r\n  top: 0;\r\n  z-index: 900;\r\n}\r\n\r\nhtml {\r\n  scroll-behavior: smooth;\r\n}\r\n"],
+  "mappings": "AAAA,CAAC,KACC,QAAS,KACT,eAAgB,OAChB,WAAY,MAEZ,WAAY,IAAI,YAChB,MAAO,IAAI,cACX,YAAa,KAAK,CAAE,UACtB,CAEA,CAAC,QACC,KAAM,EAXR,QAYW,EAAE,KAAK,KAChB,WAAY,gBAAgB,MAAM,CAAE,IAAI,sBAAsB,EAAE,CAAE,IAAI,iBAAiB,MACvF,SAAU,SAEV,QAAS,KACT,eAAgB,MAClB,CAEA,CAAC,eACD,CAAC,eACC,KAAM,EAAE,EAAE,IACZ,CAEA,CALC,eAMC,SAAU,OACV,IAAK,EACL,QAAS,GACX,CAEA,KACE,gBAAiB,MACnB",
+  "names": []
+}

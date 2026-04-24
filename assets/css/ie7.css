@@ -1,0 +1,14 @@
+/* Website template by freewebsitetemplates.com */
+/*------------------------- Layout styles ------------------------*/ 
+
+/*------------------------- Header ------------------------*/
+
+/*------------------------- Body ------------------------*/
+.body div ul.article li{
+	width:258px;
+}
+.body div ul#article li a{
+	margin: -47px 0 0 -50px;
+}
+
+/*------------------------- Footer ------------------------*/
