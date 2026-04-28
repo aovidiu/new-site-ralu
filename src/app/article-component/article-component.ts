@@ -37,8 +37,8 @@ export class ArticleComponent {
           this.articleContents = this.sanitizer.sanitize(SecurityContext.HTML, article.contents) ?? '';
 
           // Set SEO meta tags
-          this.title.setTitle(`${article.title} - Cabinet Psihologie București`);
-          this.meta.updateTag({ name: 'description', content: `Articol despre sănătate mentală București: ${article.title}. Informații utile despre psihologie și dezvoltare personală de la specialiști din București.` });
+          this.title.setTitle(`Articol informațional - Cabinet Psihologie București`);
+          this.meta.updateTag({ name: 'description', content: `Articol despre sănătate mentală București. Informații utile despre psihologie și dezvoltare personală de la specialiști din București.` });
           this.meta.updateTag({ name: 'keywords', content: `articol psihologie București, ${article.title.toLowerCase()} București, sănătate mentală București, dezvoltare personală București, consiliere București` });          
           setCanonicalLinkForIndex(this.document, `article/${id}`);
         }

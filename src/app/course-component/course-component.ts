@@ -41,7 +41,7 @@ export class CourseComponent {
           this.courseContents = this.sanitizer.sanitize(SecurityContext.HTML, course.contents) ?? '';
 
           // Set SEO meta tags
-          this.title.setTitle(`${course.title} - Cabinet Psihologie București`);
+          this.title.setTitle(`Cursuri pentru dezvoltare personală București - Cabinet Psihologie`);
           this.meta.updateTag({ name: 'description', content: `Curs de dezvoltare personală București: ${course.title}. Învață să gestionezi stresul, să îmbunătățești relațiile și să îți dezvolți abilitățile personale cu specialiști din București.` });
           this.meta.updateTag({ name: 'keywords', content: `curs dezvoltare personală București, ${course.title.toLowerCase()} București, psihologie București, terapie București, dezvoltare personală București` });
           setCanonicalLinkForIndex(this.document, `course/${id}`);
