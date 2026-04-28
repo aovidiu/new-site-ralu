@@ -1,7 +1,8 @@
-import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component, DOCUMENT, inject } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CoursesTexts } from '../texts/courses-texts';
 import { Meta, Title } from '@angular/platform-browser';
+import { setCanonicalLinkForIndex } from '../common/helpers';
 
 @Component({
   selector: 'app-courses-library-component',
@@ -13,6 +14,7 @@ import { Meta, Title } from '@angular/platform-browser';
 export class LibraryComponent {
   private meta = inject(Meta);
   private title = inject(Title);
+  private document = inject(DOCUMENT);
 
   readonly backButtonLabel = 'Back';
 
@@ -27,8 +29,9 @@ export class LibraryComponent {
 
   ngOnInit() {
     this.title.setTitle('Cursuri pentru dezvoltare personală București - Cabinet Psihologie');
-    this.meta.updateTag({ name: 'description', content: 'Cursuri online de dezvoltare personală și psihologie din București. Învață să gestionezi stresul, să îmbunătățești relațiile și să îți dezvolți abilitățile personale cu ajutorul specialiștilor noștri din București.' });
+    this.meta.updateTag({ name: 'description', content: 'Cursuri de dezvoltare personală și psihologie din București. Învață să gestionezi stresul si să îmbunătățești relațiile, abilitățile personale.' });
     this.meta.updateTag({ name: 'keywords', content: 'cursuri dezvoltare personală București, cursuri online psihologie București, dezvoltare personală București, management stres București, relații București, comunicare București, cabinet psihologie București' });
+    setCanonicalLinkForIndex(this.document, 'library');
   }
 }
 

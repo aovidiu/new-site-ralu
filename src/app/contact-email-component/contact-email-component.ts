@@ -1,8 +1,9 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { ChangeDetectorRef, Component, ViewChild, inject } from '@angular/core';
+import { ChangeDetectorRef, Component, DOCUMENT, ViewChild, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { Meta, Title } from '@angular/platform-browser';
+import { setCanonicalLinkForIndex } from '../common/helpers';
 
 @Component({
   selector: 'app-contact-email-component',
@@ -15,6 +16,7 @@ export class ContactEmailComponent {
   private cdr = inject(ChangeDetectorRef);
   private meta = inject(Meta);
   private title = inject(Title);
+  private document = inject(DOCUMENT);
 
   @ViewChild('contactForm') contactForm!: NgForm;
 
@@ -26,8 +28,9 @@ export class ContactEmailComponent {
 
   ngOnInit() {
     this.title.setTitle('Contact - Cabinet Psihologie București');
-    this.meta.updateTag({ name: 'description', content: 'Contactați cabinetul de psihologie din București pentru programări și consultații. Suntem aici să vă ajutăm să depășiți dificultățile emoționale și să vă îmbunătățiți calitatea vieții.' });
+    this.meta.updateTag({ name: 'description', content: 'Contactați cabinetul de psihologie din București pentru programări și consultații. Suntem aici să vă ajutăm să depășiți dificultățile emoționale' });
     this.meta.updateTag({ name: 'keywords', content: 'contact cabinet psihologie București, programare terapie București, consultație psihologică București, ajutor emoțional București, cabinet psihologie București' });
+    setCanonicalLinkForIndex(this.document, 'send-message');
   }
 
   ngAfterViewInit() {

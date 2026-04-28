@@ -7,3 +7,4 @@ export type InfoStructure = {
   image?: string;
   imageAlt?: string;
 };
+

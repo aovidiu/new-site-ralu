@@ -1,9 +1,10 @@
-import { Component, SecurityContext, inject } from '@angular/core';
+import { Component, DOCUMENT, SecurityContext, inject } from '@angular/core';
 import { ActivatedRoute, RouterModule } from '@angular/router';
 import { DomSanitizer } from '@angular/platform-browser';
 import { ArticlesTexts } from '../texts/articles-texts';
 import { BackButtonComponent } from '../back-button-component/back-button-component';
 import { Meta, Title } from '@angular/platform-browser';
+import { setCanonicalLinkForIndex } from '../common/helpers';
 
 @Component({
   selector: 'app-article-component',
@@ -16,6 +17,7 @@ export class ArticleComponent {
   private route = inject(ActivatedRoute);
   private meta = inject(Meta);
   private title = inject(Title);
+  private document = inject(DOCUMENT);
 
   allArticles = ArticlesTexts;
   selectedArticle = null as (typeof ArticlesTexts)[number] | null;
@@ -37,7 +39,8 @@ export class ArticleComponent {
           // Set SEO meta tags
           this.title.setTitle(`${article.title} - Cabinet Psihologie București`);
           this.meta.updateTag({ name: 'description', content: `Articol despre sănătate mentală București: ${article.title}. Informații utile despre psihologie și dezvoltare personală de la specialiști din București.` });
-          this.meta.updateTag({ name: 'keywords', content: `articol psihologie București, ${article.title.toLowerCase()} București, sănătate mentală București, dezvoltare personală București, consiliere București` });
+          this.meta.updateTag({ name: 'keywords', content: `articol psihologie București, ${article.title.toLowerCase()} București, sănătate mentală București, dezvoltare personală București, consiliere București` });          
+          setCanonicalLinkForIndex(this.document, `article/${id}`);
         }
       }
     });

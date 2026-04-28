@@ -1,6 +1,7 @@
-import { Component, inject } from '@angular/core';
+import { Component, DOCUMENT, inject, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { Meta, Title } from '@angular/platform-browser';
+import { setCanonicalLinkForIndex } from '../common/helpers';
 
 @Component({
   selector: 'app-psihoterapy',
@@ -12,6 +13,7 @@ import { Meta, Title } from '@angular/platform-browser';
 export class PsihoterapyComponent {
   private meta = inject(Meta);
   private title = inject(Title);
+  private document = inject(DOCUMENT);
 
   contents1 = `
     <p>Procesul terapeutic este un drum al descoperirii și al transformării. Nu este întotdeauna simplu, dar este un spațiu în care poți fi tu însuți, fără măști și fără teamă de judecată.</p>
@@ -36,8 +38,9 @@ export class PsihoterapyComponent {
     <h2>. . .te așteptăm să ne contactezi</h2>`;
 
   ngOnInit() {
-    this.title.setTitle('Psihoterapie București - Cabinet Psihologie');
-    this.meta.updateTag({ name: 'description', content: 'Servicii de psihoterapie cognitiv-comportamentală în București. Ajutăm persoanele să depășească anxietatea, depresia și alte dificultăți emoționale prin ședințe profesioniste și confidențiale.' });
+    this.title.setTitle('Psihoterapie București - Cabinet Psihologie');    
+    this.meta.updateTag({ name: 'description', content: 'Servicii de psihoterapie cognitiv-comportamentală în București. Ajutăm persoanele să depășească anxietatea, depresia și alte dificultăți emoționale' });
     this.meta.updateTag({ name: 'keywords', content: 'psihoterapie București, terapie cognitiv comportamentală București, anxietate București, depresie București, stres București, terapie online București, cabinet psihologie București' });
+    setCanonicalLinkForIndex(this.document, 'psihoterapy');
   }
 }
